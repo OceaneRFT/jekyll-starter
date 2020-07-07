@@ -1,0 +1,3 @@
+# Permet d'ignorer le tracking des fichiers sur Git
+.jekyll-cache/
+_site/
