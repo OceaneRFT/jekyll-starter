@@ -3,9 +3,5 @@ baseurl: /jekyll-starter
 
 # Nous déclarons une nouvelle collection personnalisée.
 collections:
-<<<<<<< HEAD
-  tutoriel:
-=======
   tutoriels:
->>>>>>> 78fed535e5a03a475883e063296b24ebd5f6606c
     output: true
