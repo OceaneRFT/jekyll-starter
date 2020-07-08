@@ -14,10 +14,23 @@
         qui fera appel au layout default.html, ne pas oublier relative_url.
     -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+    <!--  -->
+    {% if page.style_name != null %}
+      <link rel="stylesheet" href="{{ '/assets/css/' | append: page.style_name | append: '.css' | relative_url }}" />
+    {% endif %}
+
     <title>Jekyll Starter Kit ++</title>
 </head>
 <body>
     {% include navigation.html %}
+    <div class="container">
+        <div class="row row-tuto">
+            <div class="col col-tuto">
+                {{ content }}
+            </div>
+        </div>
+    </div>
 
     <!-- script bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
