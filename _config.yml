@@ -2,6 +2,6 @@
 baseurl: /jekyll-starter
 
 # Nous déclarons une nouvelle collection personnalisée.
-collection:
-  tutoriel:
+collections:
+  tutoriels:
     output: true
