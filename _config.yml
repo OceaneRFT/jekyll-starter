@@ -3,9 +3,14 @@ baseurl: /jekyll-starter
 
 # Nous déclarons une nouvelle collection personnalisée.
 collections:
+<<<<<<< HEAD
   tutoriel:
     output: true
 
 plugins:
   - jekyll-paginate
   
+=======
+  tutoriels:
+    output: true
+>>>>>>> 86dfa5402450d528fe76c0964bba59d5eb700051
