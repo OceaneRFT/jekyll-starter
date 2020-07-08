@@ -1,5 +1,5 @@
 ---
-capture1: {{}}
+layout: tutoriel
 ---
 # Jekyll - Premières pierres
 
