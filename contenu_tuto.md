@@ -1,7 +1,7 @@
 # Jekyll - Premières pierres
 
 Créer un dossier pour héberger le projet. Dans ce dossier, créer un fichier `index.md`
-Ouvrir le terminal (astuce : raccourci sur VSCode pour ouvrir le terminal : *ctrl + %*).
+Ouvrir le terminal (astuce : raccourci sur VSCode pour ouvrir le terminal : *ctrl + ù*).
 Dans le terminal, taper la commande `jekyll serve` : Jekyll se met en marche et commence à compiler vos fichiers !
 
 # Créer son layout par défaut
