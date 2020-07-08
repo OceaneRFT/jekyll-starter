@@ -1,7 +1,7 @@
 ---
 layout: tutoriel
 order: 1
-title: Jekyll - Premières pierres
+title: Premières pierres
 ---
 # Jekyll - Premières pierres
 

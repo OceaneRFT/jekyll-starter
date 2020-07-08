@@ -1,7 +1,7 @@
 ---
 layout: tutoriel
-title : part 2
 order: 2
+title: Les layout
 ---
 # Créer son layout par défaut
 
