@@ -1,5 +1,14 @@
 ---
-layout: default
+layout: base
 style_name: tutoriels
 ---
-{{ content }}
+
+<div class="col col-page">
+    {{ content }}
+</div>
+
+<div class="nav-right">
+    {% for item in site.data.tutoriels %}
+    <a href="{{ item.link | relative_url }}">Tuto 2</a>
+    {% endfor %}
+</div>
