@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{% for item in site.data.tutoriel %}
+{% if item.link == page.url %}
+    {{ content }}
+    {% include previous-next.html %}
+{% endif %}
+{% endfor %}

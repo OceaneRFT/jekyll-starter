@@ -5,3 +5,4 @@ baseurl: /jekyll-starter
 collections:
   tutoriels:
     output: true
+
