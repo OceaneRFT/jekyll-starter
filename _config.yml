@@ -2,6 +2,10 @@
 baseurl: /jekyll-starter
 
 # Nous déclarons une nouvelle collection personnalisée.
-collection:
+collections:
   tutoriel:
     output: true
+
+plugins:
+  - jekyll-paginate
+  

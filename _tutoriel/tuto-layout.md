@@ -1,4 +1,6 @@
 ---
+layout: tutoriel
+title: Créer son layout par défaut 
 ---
 # Créer son layout par défaut
 

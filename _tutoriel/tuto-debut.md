@@ -1,4 +1,6 @@
 ---
+layout: tutoriel
+title: Jekyll - Premières pierres
 ---
 # Jekyll - Premières pierres
 
