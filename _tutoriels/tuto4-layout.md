@@ -1,4 +1,5 @@
 ---
+title: Les layout
 ---
 # Créer son layout par défaut
 
