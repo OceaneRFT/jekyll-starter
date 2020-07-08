@@ -1,0 +1,19 @@
+/* Reset Css */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #888;
+    height: 100vh;
+    width: 70%;
+    & .row-tuto {
+        margin: 0;
+        background-color: rosybrown;
+        & .col-tuto {
+            background-color: #666;
+        }
+    }
+}
