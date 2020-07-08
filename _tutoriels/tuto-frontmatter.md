@@ -1,4 +1,7 @@
 ---
+layout: tutoriel
+title : part 5
+order: 5
 ---
 # Utiliser le Front Matter
 Le Front Matter (matière en avant), doit, comme son nom l'indique, apparaître en premier dans un fichier : 

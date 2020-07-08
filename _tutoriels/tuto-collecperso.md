@@ -1,5 +1,7 @@
 ---
 layout: tutoriel
+title : part 3
+order: 3
 ---
 # Créer une collection personnalisée
 Les posts de blog, c'est bien, mais parfois on a besoin de nos propres collections.

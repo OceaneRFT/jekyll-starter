@@ -1,4 +1,7 @@
 ---
+layout: tutoriel
+order: 4
+title: Préparer un beau dossier bien structuré
 ---
 # Préparer un beau dossier bien structuré
 Liste des dossiers et fichiers dont vous aurez besoin :
