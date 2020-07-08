@@ -1,0 +1,15 @@
+.nav_icon {
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar.bg-light {
+        background-color:transparent!important;
+    }
+    .navbar .dropdown-menu {
+        border: none;
+    }
+    .nav-link-icon {
+        display: none;
+    }
+}

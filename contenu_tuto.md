@@ -1,5 +1,6 @@
 # Jekyll - Premières pierres
 
+<<<<<<< HEAD
 Créez un dossier pour héberger le projet. Dans ce dossier, créez un fichier `index.md`
 Ouvrez le terminal (astuce : raccourci sur VSCode pour ouvrir le terminal : *ctrl + ù*).
 Dans le terminal :
@@ -40,6 +41,11 @@ Vous aurez aussi sûrement besoin d'un fichier `_config.yml`, qu'il faut créer 
 
 Ouhlala ! Ca fait vraiment beaucoup de dossiers tout ça ! Ne vous inquiétez pas, on va voir tout cela en détails.
 
+=======
+Créer un dossier pour héberger le projet. Dans ce dossier, créer un fichier `index.md`
+Ouvrir le terminal (astuce : raccourci sur VSCode pour ouvrir le terminal : *ctrl + ù*).
+Dans le terminal, taper la commande `jekyll serve` : Jekyll se met en marche et commence à compiler vos fichiers !
+>>>>>>> a3e955fe8ece02efa5ef00519c023df587034454
 
 # Créer son layout par défaut
 Dans votre dossier `_layout`, créez un fichier HTML que nous appellerons ici "default" (par défaut, en anglais) : `default.html`.

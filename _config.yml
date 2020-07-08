@@ -1,0 +1,7 @@
+# Nous indiquons ici, le liens vers quoi pointe relative_url.
+baseurl: /jekyll-starter
+
+# Nous déclarons une nouvelle collection personnalisée.
+collection:
+  tutoriel:
+    output: true
