@@ -8,12 +8,19 @@ body{
 .container {
     background-color: #888;
     height: 100vh;
-    width: 70%;
-    & .row-tuto {
+    width: 900px;
+    & .row-page {
         margin: 0; 
         background-color: rosybrown;
-        & .col-tuto {
+        & .col-page {
             background-color: #666;
         }
+    }
+    & .nav-right {
+        background-color: red;
+        position: fixed;
+        margin-left: 900px;
+        display: none;
+        flex-direction: column;
     }
 }

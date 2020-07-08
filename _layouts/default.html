@@ -19,7 +19,7 @@
 
     <!--  -->
     {% if page.style_name != null %}
-      <link rel="stylesheet" href="{{ '/assets/css/' | append: page.style_name | append: '.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: page.style_name | append: '.css' | relative_url }}" />
     {% endif %}
 
     <title>Jekyll Starter Kit ++</title>
@@ -29,17 +29,20 @@
 <body>
     {% include navigation.html %}
     <div class="container">
-        <div class="row row-tuto">
-            <div class="col col-tuto">
+        <div class="row row-page">
+            <div class="col col-page">
                 {{ content }}
+            </div>
+
+            <div class="nav-right">
+                {% for item in site.data.tutoriels %}
+                <a href="{{ item.link | relative_url }}">Tuto 2</a>
+                {% endfor %}
             </div>
         </div>
     </div>
 
-    {{ content }}
-    {% for item in site.data.tutoriels %}
-     <a href="{{ item.link | relative_url }}">{{ item.link }}</a>
-    {% endfor %}
+
     <!-- script bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "

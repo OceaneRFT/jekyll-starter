@@ -1,10 +1,5 @@
 ---
 layout: default
+style_name: tutoriels
 ---
-
-{% for item in site.data.tutoriels %}
-{% if item.link == page.url %}
-    {{ content }}
-    {% include previous-next.html %}
-{% endif %}
-{% endfor %}
+{{ content }}

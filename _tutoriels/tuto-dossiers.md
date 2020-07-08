@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutoriels
 ---
 # Préparer un beau dossier bien structuré
 Liste des dossiers et fichiers dont vous aurez besoin :

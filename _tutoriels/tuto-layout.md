@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutoriels
 ---
 # Créer son layout par défaut
 
