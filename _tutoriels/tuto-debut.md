@@ -1,5 +1,5 @@
 ---
-layout: tutoriel
+layout: default
 ---
 # Jekyll - Premières pierres
 
