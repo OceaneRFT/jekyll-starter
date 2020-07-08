@@ -1,15 +1,29 @@
-.nav_icon {
+.navbar {
+    background-color: #444;
+}
+.icon_burger {
     width: 50px;
 }
 
-@media (max-width: 768px) {
-    .navbar.bg-light {
-        background-color:transparent!important;
+.nav-link-icon {
+    width: 50px;
+    padding: 0;
+    margin: 5px;
+    position: absolute;
+    z-index: 10000;
+    right: 0;
+    top: 0;
+    & .nav_icon {
+        width: 100%;
     }
+}
+
+svg.nav_icon .background {
+    fill: #333;
+}
+
+@media (max-width: 768px) {
     .navbar .dropdown-menu {
         border: none;
-    }
-    .nav-link-icon {
-        display: none;
     }
 }
