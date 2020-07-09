@@ -1,10 +1,6 @@
 ---
-<<<<<<< HEAD
-layout: tutoriel
+layout: tutoriels
 order: 6
-=======
-layout: default
->>>>>>> 5fd832117af2158cd446147c4d41198aa2f7901b
 title: Les includes
 ---
 # Les includes

@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
-layout: tutoriel
-order: 1
-=======
 layout: tutoriels
-order: 0
->>>>>>> 5fd832117af2158cd446147c4d41198aa2f7901b
+order: 1
 title: Premières pierres
 ---
 # Jekyll - Premières pierres
