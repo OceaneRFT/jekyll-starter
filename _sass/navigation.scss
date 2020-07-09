@@ -2,9 +2,10 @@
 
 
 .navbar {
-    background-color:  rgb(106, 178, 207);
+    background-color: $theme-blue ;
+    ;
     & .nav-link {
-        color: white;
+        color: $colour-link;
     }
     & .nav-link-icon {
         width: 50px;
@@ -30,13 +31,17 @@
     margin: 0px 15px;
     
         & .label {
-        border: 1px solid  black;
+            @include police ($theme-blue);
+        
     }
     }
     &-nav-button:hover {
-        color: black;
+        @include police ($theme-blue);
 
     }
+}
+a.content-nav-button{
+    @include police ($theme-blue);
 }
 
 .navbar-toggler {
