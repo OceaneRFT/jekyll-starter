@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: tutoriels
+order: 5
 title: Les includes
 ---
 # Les includes

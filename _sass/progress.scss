@@ -1,0 +1,64 @@
+$step_color: #eaeaea;
+$step_color_passed: #7dc71b;
+$step_color_current: darken($step_color, 3);
+$offset_parent: 0px;
+
+
+section.progress {
+    display: flex;
+    height: 20px;
+    margin-bottom: 30px;
+    margin-left: $offset_parent;
+    margin-right: $offset_parent;
+    
+    a.step {
+      flex-grow: 1;
+      background: $step_color;
+      border-right: 1px solid grey;
+      position: relative;
+      border-bottom: 3px solid darken($step_color, 3);
+  
+      &:hover {
+        background: darken($step_color, 3);
+        border-bottom: 3px solid darken($step_color, 6);
+      }
+  
+      &.passed {
+        background: $step_color_passed;
+        border-bottom: 3px solid darken($step_color_passed, 3);
+  
+        &:hover {
+          background: darken($step_color_passed, 3);
+          border-bottom: 3px solid darken($step_color_passed, 6);
+        }
+      }
+  
+      &.current {
+        background: $step_color_current;
+        border-bottom: 3px solid darken($step_color_current, 3);
+  
+        &:hover {
+          background: darken($step_color_current, 3);
+          border-bottom: 3px solid darken($step_color_current, 6);
+        }
+      }
+  
+      .marker {
+        content: " ";
+        height: 0;
+        width: 0;
+        border: solid transparent;
+        border-bottom-color: #000;
+        border-width: 0 6px 8px 6px;
+        top: 22px;
+        position: absolute;
+        -ms-transform: translate(-50%,0);
+        transform: translate(-50%,0);
+        left: 50%;
+      }
+    }
+  
+    span.separator {
+      width: 3px;
+    }
+  }

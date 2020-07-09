@@ -1,0 +1,15 @@
+<section class="progress">
+    {% assign tutoriels = site.tutoriels | sort: "order" %}
+    {% assign last_part = -1 %}
+    {% for tutoriel in tutoriels %}
+      {% if last_part != tutoriel.part and last_part != -1 %}
+      <span class="separator"></span>
+      {% endif %}
+      <a class="step {% if tutoriel.order < page.order %}passed{% endif %} {% if tutoriel.order == page.order %}current{% endif %}" href="{{ tutoriel.url | relative_url}}">
+        {% if step.order == page.order %}
+          <span class="marker"></span>
+        {% endif %}
+      </a>
+      {% assign last_part = tutoriel.part %}
+    {% endfor %}
+  </section>

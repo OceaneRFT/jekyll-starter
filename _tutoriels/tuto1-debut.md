@@ -1,12 +1,16 @@
 ---
 layout: tutoriels
-order: 0
+order: 1
 title: Premières pierres
 ---
+<!-- Balise order qui nous permet ici d'indexer les tutos afin de faire fonctionner la pagination
+-->
+
 # Jekyll - Premières pierres
 
 Créez un dossier pour héberger le projet. Dans ce dossier, créez un fichier `index.md`.
 Ouvrez le terminal (astuce : raccourci sur VSCode pour ouvrir le terminal : *ctrl + ù*).
+
 
 Dans le terminal :
 Tapez la commande `bundle init`.
@@ -25,4 +29,6 @@ Dans le terminal, tapez la commande `jekyll serve` : Jekyll se met en marche et 
 [![commande Jekyll serve]({{ '/assets/images/capture_jekyll-serve.png' | relative_url }})]({{ '/assets/images/capture_jekyll-serve.png' | relative_url }})
 
 Jekyll compile vos fichiers dans un dossier `_site` généré automatiquement lorsque vous lancez la compilation. 
+
+
 Jekyll génére également automatiquement un dossier `.jekyll-cache`.
