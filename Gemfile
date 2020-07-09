@@ -1,3 +1,5 @@
+# Ce fichier nous permet de garantir la version de Jekyll sur tous les navigateurs
+
 # frozen_string_literal: true
 
 source "https://rubygems.org"

@@ -9,6 +9,9 @@ Nous indiquons dans le front-matter que nous appliquons au fichier index.html le
 -->
 # Jekyll, mais pour quoi faire ???
 
+
+<!-- ![LOgo]({{ '/assets/images/logo1.svg' | relative_url }}) -->
+
 Jekyll est un générateur de site statique (qui n'ont pas de backend, donc), qui permet un développement ... dynamique ! Attention, ne pas confondre un site dynamique avec un développement dynamique. 
 
 Développement dynamique : un développement basé sur la séparation des responsabilités. Grosso modo, vous écrivez des bouts de code correspondant à des éléments précis (la barre de navigation, le footer...), et vous assemblez ces bouts de code grâce à la moulinette Jekyll (on appelle cela la **compilation**). Le but est de simplifier la maintenance de votre code : au lieu de répéter le doctype dans les 120 pages de votre site, vous pourrez l'indiquer une seule fois. Si vous avez besoin de changer un élément dans votre doctype, vous n'avez à le modifier qu'à un seul endroit (au lieu de faire 120 copiés-collés :)).

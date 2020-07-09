@@ -1,3 +1,5 @@
+# Cette page sert à configurer Jekyll
+
 # Nous indiquons ici, le liens vers quoi pointe relative_url.
 baseurl: /jekyll-starter
 

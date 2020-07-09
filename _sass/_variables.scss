@@ -1,0 +1,34 @@
+$theme-dark: #202020;
+$theme-smooth: #f8f9fa;
+$theme-dark: #202020;
+$theme-smooth: #f8f9fa;
+
+@mixin theme($color) {
+    @if ($color == $theme-dark) {
+        $color: lighten($theme-dark, 90%);
+    }@if ($color == $theme-smooth){
+        $color: darken($theme-smooth, 90%)
+    }
+    @if ($color == $theme-smooth){
+        $color: darken($theme-smooth, 90%)
+    }
+    @if ($color == $theme-smooth){
+        $color: darken($theme-smooth, 90%)
+    }
+    @content;
+}
+
+@mixin bg-nav($color) {
+    @if ($color == $theme-dark) {
+        $color: lighten($theme-dark, 5%);
+    }@if ($color == $theme-smooth){
+        $color: darken($theme-smooth, 5%)
+    }
+    @if ($color == $theme-smooth){
+        $color: darken($theme-smooth, 5%)
+    }
+    @if ($color == $theme-smooth){
+        $color: darken($theme-smooth, 5%)
+    }
+    background-color: $color;
+}
