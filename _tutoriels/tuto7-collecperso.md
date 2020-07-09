@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutoriels
 title: Les collections personnalisées
 ---
 # Créer une collection personnalisée

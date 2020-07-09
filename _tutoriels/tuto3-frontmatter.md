@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tutoriels
 title: Utiliser le Front Matter
 ---
 # Utiliser le Front Matter

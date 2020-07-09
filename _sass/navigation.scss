@@ -1,6 +1,6 @@
 // Style de la barre de navigation
 .navbar {
-    background-color: #444;
+    background-color:  rgb(106, 178, 207);
     & .nav-link {
         color: white;
     }
@@ -18,6 +18,9 @@
     }
 }
 
+.nav-right {
+    box-shadow: 2px 2px 8px;
+}
 .navbar-toggler {
     width: 56px;
       &:focus {

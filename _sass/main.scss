@@ -10,30 +10,50 @@ body{
 .container {
     height: 100%;
     width: 900px;
-    background-color: #888;
+    background-color: rgb(106, 178, 207);
     & .row-page {
         margin: 0;
         & .col-page {
             margin-top: 15px;
             margin-bottom: 15px;
-            background-color: #777;
+            background-color: rgba(251, 241, 241, 0.376);
             border-radius: 25px;
         }
     }
     & .nav-right {
         margin-left: 885px;
         padding: 15px;
-        background-color: #999;
+        background-color:  black;
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         position: fixed;
         display: flex;
         flex-direction: column;
         & .nav_right-link {
-            color: black;
+            color: white;
             &:hover {
                 text-decoration: underline;
             }
         }
     }
+}
+
+img {
+    box-shadow: 5px 5px 6px -3px;
+}
+
+code {
+    font-size: 107.5%;
+    color: #000000;
+    word-wrap: break-word;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    background-color: rgba(153, 153, 153, 0.20);
+   
+
+}
+
+ol{
+    margin-bottom: 25px;
 }

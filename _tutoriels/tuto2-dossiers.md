@@ -4,17 +4,32 @@ title: Préparer un dossier
 ---
 # Préparer un beau dossier bien structuré
 Liste des dossiers et fichiers dont vous aurez besoin :
-- `_layout`
-- `_includes`
-- `_data`
-- `_posts`
-- `_sass` => fichier `main.scss`
-- `assets`
+
+1. `_layout`
+
+2. `_includes`
+
+3. `_data`
+
+4. `_posts`
+
+5. `_sass` => fichier `main.scss`
+
+6. `assets`
+
     - `images`
+
     - `css` => fichier `styles.scss`
+
     - `js` (si vous utilisez du js bien sûr :) )
-- fichier `.gitignore`
-- fichier `_config.yml`
+
+7. fichier `.gitignore`
+
+8. fichier `_config.yml`
+
+
+
+
 
 **ATTENTION !** Jekyll est sensible, il faut faire attention aux noms des dossiers et bien respecter leur nomenclature (avec ou sans underscore). Bannissez également majuscules et accents de vos noms de fichiers et dossiers.
 
