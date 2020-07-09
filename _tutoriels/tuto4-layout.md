@@ -1,7 +1,7 @@
 ---
 layout: tutoriels
 order: 4
-title: Les layout
+title: Les layouts
 ---
 # Les layouts
 
