@@ -1,3 +1,6 @@
+// Style de la barre de navigation
+
+
 .navbar {
     background-color: #444;
     & .nav-link {
@@ -18,7 +21,7 @@
 }
 
 .content-footer{
-    display: flex;
+    display: flex;                                   /////////////// next-previous
     justify-content: space-around;
 }
 

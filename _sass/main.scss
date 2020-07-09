@@ -1,26 +1,44 @@
 /* Reset Css */
 
+
 body{
     margin: 0;
     padding: 0;
 }
 
+/* End reset css */
+
+
+
+
+// Style de l'ensemble du site
 .container {
-    background-color: #888;
     height: 100%;
     width: 900px;
+    background-color: #888;
     & .row-page {
-        margin: 0; 
-        background-color: rosybrown;
+        margin: 0;
         & .col-page {
-            background-color: #666;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background-color: #777;
+            border-radius: 25px;
         }
     }
     & .nav-right {
-        background-color: red;
+        margin-left: 885px;
+        padding: 15px;
+        background-color: #999;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
         position: fixed;
-        margin-left: 900px;
         display: flex;
         flex-direction: column;
+        & .nav_right-link {
+            color: black;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }

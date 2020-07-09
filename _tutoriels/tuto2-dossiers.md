@@ -1,6 +1,6 @@
 ---
 layout: tutoriels
-order: 4
+order: 2
 title: Préparer un beau dossier 
 ---
 # Préparer un beau dossier bien structuré

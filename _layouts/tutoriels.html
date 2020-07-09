@@ -2,14 +2,25 @@
 layout: base
 style_name: tutoriels
 ---
-
-<div class="col col-page">
+<!-- 
+    Comme "default.html" elle s'insérera dans le layout de base, nous souhaitons lui donner un CSS différent, c'est pour cela que nous lui 
+    donnons dans cette variable que nous avons prédéfini sur la page "base.html"   
+-->
+<div class="col-12 col-page">
+{% include progress.html %}
+</div>
+<div class="col-12 col-page">
+    
     {{ content }}
 
+
+</div>
+<div class="col-12 col-page">
 {% include previous-next.html %}
 </div>
+<!-- Nous utilisons la même boucle que dans "navigation.html" afin de génerer la liste des liens automatiquement -->
 <div class="nav-right">
-    {% for item in site.data.tutoriels %}
-    <a href="{{ item.link | relative_url }}">Tuto 2</a>
+    {% for tutoriel in site.tutoriels %}
+    <a  class="nav_right-link" href="{{ tutoriel.link | relative_url }}">{{ tutoriel.title }}</a>
     {% endfor %}
 </div>

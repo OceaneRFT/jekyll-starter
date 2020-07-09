@@ -3,6 +3,9 @@ layout: tutoriels
 order: 1
 title: Premières pierres
 ---
+<!-- Balise order qui nous permet ici d'indexer les tutos afin de faire fonctionner la pagination
+-->
+
 # Jekyll - Premières pierres
 
 Créez un dossier pour héberger le projet. Dans ce dossier, créez un fichier `index.md`.
