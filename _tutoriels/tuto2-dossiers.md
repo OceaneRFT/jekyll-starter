@@ -42,12 +42,7 @@ Dans le dossier `assets/css`, créez un fichier `styles.scss`. C'est ce fichier 
 [![import main dans styles.scss]({{ '/assets/images/capture_importmain.png' | relative_url }})]({{ '/assets/images/capture_importmain.png' | relative_url }})
 
 
-**ATTENTION !** Dans le fichier `styles.scss`, n'oubliez pas d'ajouter le **Front Matter**, indiqué par les deux lignes suivantes tout en haut du fichier  :
-```
----
----
-````
- Comme c'est un fichier `.scss`, sass ne reconnaîtra pas les trois tirets indiquant le Front Matter, mais ils sont obligatoires pour que Jekyll sache que c'est un fichier à compiler.
+**ATTENTION !** Dans le fichier `styles.scss`, n'oubliez pas d'ajouter le **Front Matter**, indiqué par les deux lignes de trois tirets tout en haut du fichier. Comme c'est un fichier `.scss`, sass ne reconnaîtra pas les trois tirets indiquant le Front Matter, mais ils sont obligatoires pour que Jekyll sache que c'est un fichier à compiler.
 
 Dans votre dossier racine, créez un fichier txt `.gitignore`. Ce fichier servira à indiquer les dossiers et fichiers qu'il n'est pas nécessaire de tracker car ce ne sont pas des fichiers de travail :
 - le dossier des [caches](https://www.youtube.com/watch?v=XoDY9vFAaG8) : `.jekyll-cache`
