@@ -2,6 +2,7 @@
 layout: tutoriels
 order: 2
 title: Préparer un beau dossier 
+part: 1
 ---
 # Préparer un beau dossier bien structuré
 Liste des dossiers et fichiers dont vous aurez besoin :

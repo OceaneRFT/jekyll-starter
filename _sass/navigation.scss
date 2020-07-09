@@ -23,9 +23,20 @@
 .nav-right {
     box-shadow: 2px 2px 8px;
 }
-.content-footer{
+.content {
+    &-footer{
     display: flex;                                   /////////////// next-previous
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0px 15px;
+    
+        & .label {
+        border: 1px solid  black;
+    }
+    }
+    &-nav-button:hover {
+        color: black;
+
+    }
 }
 
 .navbar-toggler {
