@@ -2,6 +2,7 @@
 layout: tutoriels
 order: 3
 title: Utiliser le Front Matter
+part: 1
 ---
 # Utiliser le Front Matter
 Le Front Matter (matière en avant), doit, comme son nom l'indique, apparaître en premier dans un fichier : 

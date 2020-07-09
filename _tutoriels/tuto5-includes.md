@@ -2,6 +2,7 @@
 layout: tutoriels
 order: 5
 title: Les includes
+part: 1
 ---
 # Les includes
 Le but de Jekyll, souvenez-vous, c'est de séparer le maximum de responsabilités dans votre code. Il sépare donc le contenu de la structure, mais, au sein de la structure, on peut encore faire des séparations, et avoir un fichier HTML pour la structure du footer, un autre pour la structure de la barre de navigation, etc. C'est un peu comme une recette : pour réaliser une pâte à crêpes, vous avez besoin d'oeufs, de farine, de bières (si si, c'est meilleur) et de lait. Chaque ingrédient correspond à un include : vous les ajouter au besoin pour réaliser votre recette. 

@@ -2,9 +2,10 @@
 
 
 .navbar {
-    background-color:  rgb(106, 178, 207);
+    background-color: $theme-blue ;
+    ;
     & .nav-link {
-        color: white;
+        color: $colour-link;
     }
     & .nav-link-icon {
         width: 50px;
@@ -23,9 +24,24 @@
 .nav-right {
     box-shadow: 2px 2px 8px;
 }
-.content-footer{
+.content {
+    &-footer{
     display: flex;                                   /////////////// next-previous
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0px 15px;
+    
+        & .label {
+            @include police ($theme-blue);
+        
+    }
+    }
+    &-nav-button:hover {
+        @include police ($theme-blue);
+
+    }
+}
+a.content-nav-button{
+    @include police ($theme-blue);
 }
 
 .navbar-toggler {
@@ -40,10 +56,4 @@
 
 svg.nav_icon .background {
     fill: #333;
-}
-
-@media (max-width: 768px) {
-    .navbar .dropdown-menu {
-        border: none;
-    }
 }

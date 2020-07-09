@@ -5,6 +5,7 @@ $offset_parent: 0px;
 
 
 section.progress {
+    overflow: visible;
     display: flex;
     height: 30px;
     margin-bottom: 30px;
@@ -53,7 +54,7 @@ section.progress {
         border: solid transparent;
         border-bottom-color: #000;
         border-width: 0 6px 8px 6px;
-        top: 22px;
+        top: 35px;
         position: absolute;
         -ms-transform: translate(-50%,0);
         transform: translate(-50%,0);
