@@ -1,9 +1,13 @@
 ---
 ---
 // Ici nous importons tous les styles généraux et non les styles personnalisés de chaque page
+
+
 @import "navigation";
 
 @import "main";
 
-@import "progress"
+@import "progress";
+
+@import "mediaquieries";
 

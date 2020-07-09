@@ -14,7 +14,7 @@ body{
 // Style de l'ensemble du site
 .container {
     height: 100%;
-    width: 1000px;
+    width: 1100px;
     background-color: rgb(106, 178, 207);
     & .row-page {
         margin: 0;
@@ -26,7 +26,7 @@ body{
         }
     }
     & .nav-right {
-        margin-left: 885px;
+        margin-left: 1085px;
         padding: 15px;
         background-color:  rgb(160, 202, 220);
         border-bottom-right-radius: 5px;
