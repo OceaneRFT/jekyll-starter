@@ -1,4 +1,6 @@
 // Style de la barre de navigation
+
+
 .navbar {
     background-color:  rgb(106, 178, 207);
     & .nav-link {
@@ -21,6 +23,11 @@
 .nav-right {
     box-shadow: 2px 2px 8px;
 }
+.content-footer{
+    display: flex;                                   /////////////// next-previous
+    justify-content: space-around;
+}
+
 .navbar-toggler {
     width: 56px;
       &:focus {

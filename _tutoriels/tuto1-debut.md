@@ -1,6 +1,6 @@
 ---
 layout: tutoriels
-order: 0
+order: 1
 title: Premières pierres
 ---
 <!-- Balise order qui nous permet ici d'indexer les tutos afin de faire fonctionner la pagination

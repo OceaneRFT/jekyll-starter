@@ -1,5 +1,6 @@
 ---
 layout: tutoriels
+order: 7
 title: Les collections personnalisées
 ---
 # Créer une collection personnalisée

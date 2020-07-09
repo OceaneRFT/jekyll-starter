@@ -1,5 +1,6 @@
 ---
 layout: tutoriels
+order: 4
 title: Les layout
 ---
 # Créer son layout par défaut
@@ -23,6 +24,6 @@ Par exemple, pour créer ce site, nous avons indiqué `baseurl: /jekyll-starter`
 
 Oui, bon, c'est bien beau tout ça, mais comment je fais pour mettre du contenu dans mon site ???
 
-Pas de panique Monique, Jekyll a tout prévu, il suffit d'ajouter {{ content }} là où vous souhaitez insérer du contenu (contenu qui sera récupéré... dans un fichier Markdown... Sorcellerie !).
+Pas de panique Monique, Jekyll a tout prévu, il suffit d'ajouter là où vous souhaitez insérer du contenu (contenu qui sera récupéré... dans un fichier Markdown... Sorcellerie !).
 
 ajouter possibilité de faire des layout dans les layouts
