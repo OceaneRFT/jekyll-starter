@@ -6,7 +6,7 @@
       <span class="separator"></span>
       {% endif %}
       <a class="step {% if tutoriel.order < page.order %}passed{% endif %} {% if tutoriel.order == page.order %}current{% endif %}" href="{{ tutoriel.url | relative_url}}">
-        {% if step.order == page.order %}
+        {% if tutoriel.order == page.order %}
           <span class="marker"></span>
         {% endif %}
       </a>

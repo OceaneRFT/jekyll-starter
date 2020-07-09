@@ -2,6 +2,7 @@
 layout: tutoriels
 order: 1
 title: Premières pierres
+part: 1
 ---
 <!-- Balise order qui nous permet ici d'indexer les tutos afin de faire fonctionner la pagination
 -->
