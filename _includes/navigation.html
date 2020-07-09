@@ -22,8 +22,8 @@
                     Tutoriels
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {% for item in site.data.tutoriels %}
-                    <a class="dropdown-item" href="{{ item.link | relative_url }}">Tuto 2</a>
+                    {% for tutoriel in site.tutoriels %}
+                        <a class="dropdown-item" href="{{ tutoriel.url | relative_url }}">{{ tutoriel.title }}</a>
                     {% endfor %}
                 </div>
             </li>

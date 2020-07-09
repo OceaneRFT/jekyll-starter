@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Utiliser le Front Matter
 ---
 # Utiliser le Front Matter
 Le Front Matter (matière en avant), doit, comme son nom l'indique, apparaître en premier dans un fichier : 

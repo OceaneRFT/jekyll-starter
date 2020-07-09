@@ -1,5 +1,6 @@
 ---
 layout: tutoriels
+title: Préparer un dossier
 ---
 # Préparer un beau dossier bien structuré
 Liste des dossiers et fichiers dont vous aurez besoin :

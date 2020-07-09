@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Les includes
 ---
 # Les includes
 Le but de Jekyll, souvenez-vous, c'est de séparer le maximum de responsabilités dans votre code. Il sépare donc le contenu de la structure, mais, au sein de la structure, on peut encore faire des séparations, et avoir un fichier HTML pour la structure du footer, un autre pour la structure de la barre de navigation, etc. Cela nous permet de retoucher plus facilement notre code (plus besoin de scroller pour retrouver quelques lignes de codes bien précises !).

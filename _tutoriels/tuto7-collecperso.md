@@ -1,5 +1,6 @@
 ---
 layout: tutoriels
+title: Les collections personnalisées
 ---
 # Créer une collection personnalisée
 Les posts de blog, c'est bien, mais parfois on a besoin de nos propres collections.
