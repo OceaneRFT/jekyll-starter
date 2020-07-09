@@ -5,8 +5,9 @@ style_name: tutoriels
 
 <div class="col col-page">
     {{ content }}
-</div>
 
+{% include previous-next.html %}
+</div>
 <div class="nav-right">
     {% for item in site.data.tutoriels %}
     <a href="{{ item.link | relative_url }}">Tuto 2</a>
