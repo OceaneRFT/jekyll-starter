@@ -25,5 +25,5 @@ Les **filters** sont indiqué par un **pipe** (AltGr + 6). Ils permettent de mod
 
 Il y a plein de filtres qui permettent de faire beaucoup (vraiment beaucoup) de choses. Vous allez en voir quelques-uns dans ce tuto, mais Nnhésitez pas à consulter [la doc de Liquid](https://shopify.github.io/liquid/){:target="_blank"} pour vous y retrouver !
 
-On a commencé à parler de [**collections**]({{ '/tutoriels/tuto9-collecperso.html' | relative_url }}){:target="_blank"} ici. Vous ne savez peut-être pas encore à quoi cela correspond, mais on vous explique tout cela dans les étapes qui arrivent !
+On a commencé à parler de [**collections**]({{ '/tutoriels/tuto110-collecperso.html' | relative_url }}){:target="_blank"} ici. Vous ne savez peut-être pas encore à quoi cela correspond, mais on vous explique tout cela dans les étapes qui arrivent !
 
