@@ -5,21 +5,27 @@ title: Préparer un beau dossier
 ---
 # Préparer un beau dossier bien structuré
 Liste des dossiers et fichiers dont vous aurez besoin :
-- `_layouts`
-- `_includes`
-- `_data`
-- `_posts`
-- `_sass` => fichier `main.scss`
-- `assets`
+1. `_layouts`
+
+2. `_includes`
+
+3. `_data`
+
+4. `_posts`
+
+5. `_sass` => fichier `main.scss`
+
+6. `assets`
+
     - `images`
 
     - `css` => fichier `styles.scss`
 
     - `js` (si vous utilisez du js bien sûr :) )
 
-- fichier `.gitignore`
+7. fichier `.gitignore`
 
-- fichier `_config.yml`
+8. fichier `_config.yml`
 
 
 
@@ -35,22 +41,17 @@ Dans le dossier `_sass`, créez un fichier `main.scss`. C'est dans ce fichier qu
 
 [![arborescence du dossier _sass]({{ '/assets/images/capture_mainscss.png' | relative_url }})]({{ '/assets/images/capture_mainscss.png' | relative_url }})
 
-Dans le dossier `assets/css`, créez un fichier `styles.scss`. C'est ce fichier que Jekyll compilera pour faire le css. Dans ce fichier, il faudra importer tout vos codes scss. N'oubliez pas d'écrire styleS (Jekyll et la nomeclature des fichiers...).
+Dans le dossier `assets/css`, créez un fichier `styles.scss`. C'est ce fichier que Jekyll compilera pour faire le css. Dans ce fichier, il faudra importer tout vos codes scss. N'oubliez pas d'écrire style**S** (Jekyll et la nomeclature des fichiers...).
 
 [![arborescence du dossier assets/css]({{ '/assets/images/capture_stylesscss.png' | relative_url }})]({{ '/assets/images/capture_stylesscss.png' | relative_url }})
 
 [![import main dans styles.scss]({{ '/assets/images/capture_importmain.png' | relative_url }})]({{ '/assets/images/capture_importmain.png' | relative_url }})
 
 
-**ATTENTION !** Dans le fichier `styles.scss`, n'oubliez pas d'ajouter le **Front Matter**, indiqué par les deux lignes suivantes tout en haut du fichier  :
-```
----
----
-````
- Comme c'est un fichier `.scss`, sass ne reconnaîtra pas les trois tirets indiquant le Front Matter, mais ils sont obligatoires pour que Jekyll sache que c'est un fichier à compiler.
+**ATTENTION !** Dans le fichier `styles.scss`, n'oubliez pas d'ajouter le **Front Matter**, indiqué par les deux lignes de trois tirets tout en haut du fichier. Comme c'est un fichier `.scss`, sass ne reconnaîtra pas les trois tirets indiquant le Front Matter, mais ils sont obligatoires pour que Jekyll sache que c'est un fichier à compiler.
 
 Dans votre dossier racine, créez un fichier txt `.gitignore`. Ce fichier servira à indiquer les dossiers et fichiers qu'il n'est pas nécessaire de tracker car ce ne sont pas des fichiers de travail :
-- le dossier des [caches](https://www.youtube.com/watch?v=XoDY9vFAaG8) : `.jekyll-cache`
+- le dossier des [caches](https://www.youtube.com/watch?v=XoDY9vFAaG8){:target="_blank"} : `.jekyll-cache`
 - le dossier `_site`, car il ne s'agit pas du dossier où on travaille, mais du dossier où sont compilés nos fichiers de travail.
 
 [![fichier gitignore]({{ '/assets/images/capture_gitignore.png' | relative_url }})]({{ '/assets/images/capture_gitignore.png' | relative_url }})

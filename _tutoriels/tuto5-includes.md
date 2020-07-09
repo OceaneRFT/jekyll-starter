@@ -24,22 +24,4 @@ Et bien, vous vous souvenez de la façon dont on a ajouté du contenu dans nos p
 
 Quand Jekyll compile nos fichiers, il sait qu'à cet endroit, il doit aller chercher l'include correspondant.
 
-Arrêtons-nous d'ailleurs un instant sur ces commandes avec des accolades et des pourcentages et tout le tralala. Pour faire toutes ces insertions, vous utilisez un autre langage, qui s'appelle [Liquid](https://shopify.github.io/liquid/basics/introduction/) (et oui, c'est la magie de Jekyll, on utilise tout un tas de langage sans même s'en apercevoir !). Liquid est un langage qui fonctionne avec des "tags" et des "filters". 
-
-Les tags sont entourés d'accolades et de pourcentages :
-
-[![tag Liquid]({{ '/assets/images/capture_tagliquid.png' | relative_url }})]({{ '/assets/images/capture_tagliquid.png' | relative_url }})
-
-Les filtres sont indiqué par un pipe (AltGr + 6) :
-
-[![filter Liquid]({{ '/assets/images/capture_liquidfilter.png' | relative_url }})]({{ '/assets/images/capture_liquidfilter.png' | relative_url }})
-
-
-
-
-
-
-
-
-
-
+Arrêtons-nous d'ailleurs un instant sur ces commandes avec des accolades et des pourcentages et tout le tralala. Pour faire toutes ces insertions, vous utilisez un autre langage, qui s'appelle [Liquid](https://shopify.github.io/liquid/basics/introduction/){:target="_blank"} (et oui, c'est la magie de Jekyll, on utilise tout un tas de langage sans même s'en apercevoir !). Pour en savoir plus, passez à l'étape suivante !
