@@ -1,10 +1,7 @@
-- name: Accueil
-  link: /
 - name: Ressources
-  link: /site/ressources.html
+  link: /ressources.html
 - name: A propos
-  link: /site/a_propos.html
+  link: /a_propos.html
 
 
 
-  

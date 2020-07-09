@@ -11,7 +11,7 @@ Les **objects** indiquent à Liquid où ajouter du contenu. Ils sont entourés d
 
 [![objects Liquid]({{ '/assets/images/capture_liquidobjects.png' | relative_url }})]({{ '/assets/images/capture_liquidobjects.png' | relative_url }})
 
-Les **tags** sont utilisés pour créer des boucles (*FOR*) et des conditions (*IF*). Ils sont entourés d'accolades et de pourcentages.
+Les **tags** sont utilisés pour créer des boucles (*FOR*) et des conditions (*IF*). Ils sont entourés d'accolades et de pourcentages. **Attention**, n'oubliez pas de fermer votre condition ou votre boucle avec `endfor`.
 
 [![boucle Liquid]({{ '/assets/images/capture_boucle.png' | relative_url }})]({{ '/assets/images/capture_boucle.png' | relative_url }})
 
