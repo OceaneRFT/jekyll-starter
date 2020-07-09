@@ -24,4 +24,4 @@ Et bien, vous vous souvenez de la façon dont on a ajouté du contenu dans nos p
 
 Quand Jekyll compile nos fichiers, il sait qu'à cet endroit, il doit aller chercher l'include correspondant.
 
-Arrêtons-nous d'ailleurs un instant sur ces commandes avec des accolades et des pourcentages et tout le tralala. Pour faire toutes ces insertions, vous utilisez un autre langage, qui s'appelle [Liquid](https://shopify.github.io/liquid/basics/introduction/) (et oui, c'est la magie de Jekyll, on utilise tout un tas de langage sans même s'en apercevoir !). Pour en savoir plus, passez à l'étape suivante !
+Arrêtons-nous d'ailleurs un instant sur ces commandes avec des accolades et des pourcentages et tout le tralala. Pour faire toutes ces insertions, vous utilisez un autre langage, qui s'appelle [Liquid](https://shopify.github.io/liquid/basics/introduction/){:target="_blank"} (et oui, c'est la magie de Jekyll, on utilise tout un tas de langage sans même s'en apercevoir !). Pour en savoir plus, passez à l'étape suivante !
