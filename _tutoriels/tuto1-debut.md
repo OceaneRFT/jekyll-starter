@@ -13,21 +13,20 @@ Ouvrez le terminal (astuce : raccourci sur VSCode pour ouvrir le terminal : *ctr
 
 
 Dans le terminal :
-. Tapez la commande `bundle init`.
+Tapez la commande `bundle init`.
 
-![ligne de commande bundle init]({{ '/assets/images/capture_bundle.png' | relative_url }}) 
+[![ligne de commande bundle init]({{ '/assets/images/capture_bundle.png' | relative_url }})]({{ '/assets/images/capture_bundle.png' | relative_url }}) 
+
+Editez le nouveau fichier `Gemfile` apparu à la racine de votre dossier : ajoutez `Gem "Jekyll"`.
+
+[![arborescence du dossier]({{ '/assets/images/capture_gem.png' | relative_url }})]({{ '/assets/images/capture_gem.png' | relative_url }})
+
+[![fichier gem ouvert dans VSCode]({{ '/assets/images/capture_gem_file.png' | relative_url }})]({{ '/assets/images/capture_gem_file.png' | relative_url }})
 
 
-. Editez le nouveau fichier `Gemfile` apparu à la racine de votre dossier : ajoutez `Gem "Jekyll"`.
+Dans le terminal, tapez la commande `jekyll serve` : Jekyll se met en marche et commence à compiler vos fichiers !
 
-![arborescence du dossier]({{ '/assets/images/capture_gem.png' | relative_url }})
-
-![fichier gem ouvert dans VSCode]({{ '/assets/images/capture_gem_file.png' | relative_url }})
-
-
-. Dans le terminal, tapez la commande `jekyll serve` : Jekyll se met en marche et commence à compiler vos fichiers !
-
-![commande Jekyll serve]({{ '/assets/images/capture_jekyll-serve.png' | relative_url }})
+[![commande Jekyll serve]({{ '/assets/images/capture_jekyll-serve.png' | relative_url }})]({{ '/assets/images/capture_jekyll-serve.png' | relative_url }})
 
 Jekyll compile vos fichiers dans un dossier `_site` généré automatiquement lorsque vous lancez la compilation. 
 
