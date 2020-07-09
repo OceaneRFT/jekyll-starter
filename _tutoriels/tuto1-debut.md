@@ -1,4 +1,5 @@
 ---
+layout: default
 order: 0
 title: Premières pierres
 ---
