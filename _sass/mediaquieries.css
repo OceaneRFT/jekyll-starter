@@ -1,0 +1,11 @@
+/* navbar */
+@media (max-width: 768px) {
+  .navbar .dropdown-menu {
+    border: none;
+  }
+}
+
+/* End navbar */
+/* global */
+/* End global */
+/*# sourceMappingURL=mediaquieries.css.map */
