@@ -1,5 +1,7 @@
-- link: /tutoriels/tuto-collecperso.html
+# - link: /tutoriels/tuto-collecperso.html
 
-- link: /tutoriels/tuto-debut.html
+# - link: /tutoriels/tuto-debut.html
 
-- link: /tutoriels/tuto-layout.html
+# - link: /tutoriels/tuto-layout.html
+
+# Cette page sert à stocker des données afin de pouvoir les utiliser partout dans le site. Il comprend plusieurs formats YAML, JSON, CSV and TSV 

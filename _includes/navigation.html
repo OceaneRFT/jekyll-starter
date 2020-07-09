@@ -22,8 +22,13 @@
                     Tutoriels
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {% for item in site.data.tutoriels %}
-                    <a class="dropdown-item" href="{{ item.link | relative_url }}">Tuto 2</a>
+
+                    <!-- Cette boucle va créer la liste des liens pour notre barre de navigation à partir de la collection tutoriels.
+                    La synthaxe est importante car on écrira tutoriel sans "S", de ce fait Jekyll comprendra que nous parlons de chaque élèment,
+                    qui se trouve dans la collection tutoriels avec un "S".  -->
+
+                    {% for tutoriel in site.tutoriels %}
+                        <a class="dropdown-item" href="{{ tutoriel.url | relative_url }}">{{ tutoriel.title }}</a>
                     {% endfor %}
                 </div>
             </li>

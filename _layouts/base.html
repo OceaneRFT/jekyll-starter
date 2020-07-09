@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-<!-- Inserer la base d'un document HTML -->
+<!--Ce fichier est le layout qui permet d'afficher la struture de base du site 
+    Inserer la base d'un document HTML -->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,9 +18,12 @@
     -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
-    <!--  -->
+    <!-- 
+        Afin de créer un CSS par page si vous voulez appliquer un style différent nous devons donner à Jekyll un lien qui lui
+        indiquera quel CSS utiliser nous utilisons ici "append" car nous ne pouvons pas mettre d'accolades dans une accolade
+    -->
     {% if page.style_name != null %}
-      <link rel="stylesheet" href="{{ '/assets/css/' | append: page.style_name | append: '.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: page.style_name | append: '.css' | relative_url }}" />
     {% endif %}
 
     <title>Jekyll Starter Kit ++</title>
@@ -28,14 +31,17 @@
 </head>
 
 <body>
+        <!-- 
+        Ici nous n'oublions pas de dire au logiciel d'inclure la navigation et le contenu 
+        -->
     {% include navigation.html %}
     <div class="container">
-        <div class="row row-tuto">
-            <div class="col col-tuto">
-                {{ content }}
-            </div>
+        <div class="row row-page">
+            {{ content }}
         </div>
     </div>
+
+
     <!-- script bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
@@ -50,12 +56,3 @@
 </body>
 
 </html>
-=======
----
-layout: base 
----
-<!-- On indique dans le front-matter que cette page aura le layout base et s'insérera dans le layout base -->
-<div class="col col-page">
-    {{ content }}
-</div>
->>>>>>> jekyllsave
