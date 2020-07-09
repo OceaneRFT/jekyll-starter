@@ -28,14 +28,14 @@ body{
     & .nav-right {
         margin-left: 885px;
         padding: 15px;
-        background-color:  black;
+        background-color:  rgb(160, 202, 220);
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         position: fixed;
         display: flex;
         flex-direction: column;
         & .nav_right-link {
-            color: white;
+            color: black;
             &:hover {
                 text-decoration: underline;
             }
@@ -44,7 +44,7 @@ body{
 }
 
 img {
-    box-shadow: 5px 5px 6px -3px;
+    box-shadow: 5px 5px 6px -3px black;
 }
 
 code {
@@ -61,4 +61,8 @@ code {
 
 ol{
     margin-bottom: 25px;
+}
+
+a{
+    color: black;
 }

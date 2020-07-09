@@ -6,10 +6,13 @@ $offset_parent: 0px;
 
 section.progress {
     display: flex;
-    height: 20px;
+    height: 30px;
     margin-bottom: 30px;
     margin-left: $offset_parent;
     margin-right: $offset_parent;
+    border: 1px solid;
+    border-radius: 3px;
+    box-shadow: 0px 1px 5px;
     
     a.step {
       flex-grow: 1;
