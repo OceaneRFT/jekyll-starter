@@ -1,6 +1,6 @@
 ---
 layout: tutoriels
-order: 9
+order: 10
 title: Les collections personnalisées
 part: 1
 ---
