@@ -31,17 +31,17 @@
     margin: 0px 15px;
     
         & .label {
-            @include police ($theme-blue);
+            @include police;
         
     }
     }
     &-nav-button:hover {
-        @include police ($theme-blue);
+        @include police;
 
     }
 }
 a.content-nav-button{
-    @include police ($theme-blue);
+    @include police;
 }
 
 .navbar-toggler {

@@ -24,7 +24,7 @@ body{
             margin-bottom: 15px;
              @include theme ($theme-blue);
             border-radius: 25px;
-            @include police ($theme-blue);
+            @include police;
         }
     }
     & .nav-right {
@@ -37,7 +37,7 @@ body{
         display: flex;
         flex-direction: column;
         & .nav_right-link {
-            @include police ($theme-blue);
+            @include police ;
             &:hover {
                 text-decoration: underline;
             }
@@ -51,7 +51,7 @@ img {
 
 code {
     font-size: 107.5%;
-    @include police ($theme-blue);
+    @include police ;
     word-wrap: break-word;
     padding: 5px;
     border: 1px solid rgba(0, 0, 0, 0.30);
@@ -66,5 +66,5 @@ ol{
 }
 
 a{
-    @include police ($theme-blue);
+    @include police ;
 }

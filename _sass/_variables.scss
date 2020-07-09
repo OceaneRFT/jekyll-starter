@@ -1,5 +1,6 @@
 $colour-link: white;
 $theme-blue: rgb(106, 178, 207);
+$color: $theme-blue;
 
 @mixin bg-nav($color) {
     @if ($color == $theme-dark) {
@@ -14,12 +15,12 @@ $theme-blue: rgb(106, 178, 207);
 
 
 
-@mixin police($color) {
-    @if ( lightness($color) > 25% ) { 
-        $color: darken($theme-blue, 90%);
+@mixin police {
+    @if ( lightness($color) > 25% ){ 
+        $color: darken($color, 90%);
         color: $color;
     }@else {
-        $color: lighten($theme-blue, 90%);
+        $color: lighten($color, 90%);
         color: $color;
         }
 @content;
