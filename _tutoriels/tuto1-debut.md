@@ -16,6 +16,7 @@ Dans le terminal :
 2. Editez le nouveau fichier `Gemfile` apparu à la racine de votre dossier : ajoutez `Gem "Jekyll"`.
 
 ![arborescence du dossier]({{ '/assets/images/capture_gem.png' | relative_url }})
+
 ![fichier gem ouvert dans VSCode]({{ '/assets/images/capture_gem_file.png' | relative_url }})
 
 
