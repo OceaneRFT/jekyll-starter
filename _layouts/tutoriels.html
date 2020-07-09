@@ -21,6 +21,6 @@ style_name: tutoriels
 <!-- Nous utilisons la même boucle que dans "navigation.html" afin de génerer la liste des liens automatiquement -->
 <div class="nav-right">
     {% for tutoriel in site.tutoriels %}
-    <a  class="nav_right-link" href="{{ tutoriel.link | relative_url }}">{{ tutoriel.title }}</a>
+    <a  class="nav_right-link" href="{{ tutoriel.url | relative_url }}">{{ tutoriel.title }}</a>
     {% endfor %}
 </div>
