@@ -1,8 +1,7 @@
----
-layout: base
----
+<!-- Inserer la base d'un document HTML -->
+<!DOCTYPE html>
+<html lang="fr">
 
-<<<<<<< HEAD
 <head>
     <!-- Ne pas oublier la meta qui donne les informations nécessaires afin de faire fonctionner votre page html  -->
     <meta charset="UTF-8">
@@ -20,7 +19,7 @@ layout: base
 
     <!--  -->
     {% if page.style_name != null %}
-      <link rel="stylesheet" href="{{ '/assets/css/' | append: page.style_name | append: '.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: page.style_name | append: '.css' | relative_url }}" />
     {% endif %}
 
     <title>Jekyll Starter Kit ++</title>
@@ -29,10 +28,13 @@ layout: base
 
 <body>
     {% include navigation.html %}
+    <div class="container">
+        <div class="row row-page">
+            {{ content }}
+        </div>
+    </div>
 
-    {{ content }}
 
-   
     <!-- script bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
@@ -47,8 +49,3 @@ layout: base
 </body>
 
 </html>
-=======
-<div class="col col-page">
-    {{ content }}
-</div>
->>>>>>> 5fd832117af2158cd446147c4d41198aa2f7901b

@@ -1,7 +1,12 @@
 ---
+<<<<<<< HEAD
 layout: tutoriel
 order: 4
 title: Préparer un beau dossier 
+=======
+layout: tutoriels
+title: Préparer un dossier
+>>>>>>> 5fd832117af2158cd446147c4d41198aa2f7901b
 ---
 # Préparer un beau dossier bien structuré
 Liste des dossiers et fichiers dont vous aurez besoin :

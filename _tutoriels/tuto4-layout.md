@@ -1,6 +1,10 @@
 ---
+<<<<<<< HEAD
 layout: tutoriel
 order: 2
+=======
+layout: tutoriels
+>>>>>>> 5fd832117af2158cd446147c4d41198aa2f7901b
 title: Les layout
 ---
 # Créer son layout par défaut
