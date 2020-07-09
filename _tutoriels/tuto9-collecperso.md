@@ -2,6 +2,7 @@
 layout: tutoriels
 order: 9
 title: Les collections personnalisées
+part: 1
 ---
 # Utiliser des collections personnalisées
 Les posts de blog, c'est bien, mais parfois on a besoin d'utiliser des collections personnalisées, qui ne fonctionnent pas selon la date de publication des fichiers qu'elles contiennent.

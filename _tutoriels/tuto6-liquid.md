@@ -2,6 +2,7 @@
 layout: tutoriels
 order: 6
 title: Liquid
+part: 1
 ---
 # Liquid
 
