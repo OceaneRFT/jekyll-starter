@@ -15,7 +15,7 @@ Pour que les fichiers dans votre dossier `_posts` soient correctement compilés 
 
 Tous vos fichiers doivent également commencer par du Front Matter (ne serait-ce que pour indiquer le layout que vous souhaitez appliquer). Prenons comme exemple cette page de site :
 
-[![code d'un post]({{ '/assets/images/capture_article.png' | relative_url }})]({{ '/assets/images/capture_article.png' | relative_url }})
+[![code d'un post]({{ '/assets/images/capture_article.png' | relative_url }})]({{ '/assets/images/capture_article.png' | relative_url }}){: .screenshot}
 
 Vous pouvez ajouter des **tags** et des **catégories** pour référencer vos articles de blogs (attention, on ne parle pas de tags Liquid ici hein !).
 

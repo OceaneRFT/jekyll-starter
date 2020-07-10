@@ -18,6 +18,9 @@
     -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
+                      <!-- Un commentaire soon  -->
+    <link rel="icon" type="image/png" href="{{'assets/images/logo1.svg'| relative_url }}" />
+
     <!-- 
         Afin de créer un CSS par page si vous voulez appliquer un style différent nous devons donner à Jekyll un lien qui lui
         indiquera quel CSS utiliser nous utilisons ici "append" car nous ne pouvons pas mettre d'accolades dans une accolade
@@ -39,6 +42,9 @@
             {{ content }}
         </div>
     </div>
+
+    {% include footer.html %}
+    
     <!-- script bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "

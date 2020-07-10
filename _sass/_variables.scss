@@ -26,8 +26,8 @@ $color: $theme-blue;
 @content;
 }
 
-@mixin theme ($color) {
-    $color: lighten($color,15%);
+@mixin theme{
+        $color: lighten($color,15%);
         background-color: $color;
 @content;
 }

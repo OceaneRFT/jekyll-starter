@@ -1,6 +1,6 @@
 $step_color: #eaeaea;
 $step_color_passed: #7dc71b;
-$step_color_current: darken($step_color, 3);
+$step_color_current: lighten($step_color_passed, 30%);
 $offset_parent: 0px;
 
 
