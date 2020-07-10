@@ -8,7 +8,7 @@
   {% assign prev_title = prev[0].title %}
 {% else %}
   {% assign prev_url = 'index.html' %}
-  {% assign prev_title = site.title %}
+  {% assign prev_title = Accueil %}
 {% endif %}
 
 {% if nextIdx <= site.tutoriels.size %}
@@ -17,7 +17,7 @@
   {% assign next_title = next[0].title %}
 {% else %}
   {% assign next_url = 'index.html' %}
-  {% assign next_title = site.title %}
+  {% assign next_title = "Accueil" %}
 {% endif %}
 
 
