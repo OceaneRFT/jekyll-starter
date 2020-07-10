@@ -22,7 +22,7 @@ body{
         & .col-page {
             margin-top: 15px;
             margin-bottom: 15px;
-             @include theme ($theme-blue);
+            @include theme;
             border-radius: 25px;
             @include police;
             & code {
@@ -50,7 +50,7 @@ body{
     & .nav-right {
         margin-left: 1085px;
         padding: 15px;
-        @include theme ($theme-blue);
+        @include theme;
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         position: fixed;

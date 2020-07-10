@@ -57,3 +57,7 @@ a.content-nav-button{
 svg.nav_icon .background {
     fill: #333;
 }
+
+.dropdown-item:hover{
+    @include theme;
+}
