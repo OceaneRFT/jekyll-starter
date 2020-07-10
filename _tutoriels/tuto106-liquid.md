@@ -20,9 +20,7 @@ Dans l'exemple ci-dessus, la boucle nous permet de créer un lien pour chaque tu
 
 [![Dropdown menu Tutoriels déroulé]({{ '/assets/images/capture_menututo.png' | relative_url }})]({{ '/assets/images/capture_menututo.png' | relative_url }}) 
 
-Les **filters** sont indiqué par un **pipe** (AltGr + 6). Ils permettent de modifier l'output d'un object. Vous connaissez déjà le filtre `| relative_url`. Dans l'exemple ci-dessous, le filtre `| capitalize` permet d'afficher l'object en lettres capitales :
-
-[![filter Liquid]({{ '/assets/images/capture_liquidfilter.png' | relative_url }})]({{ '/assets/images/capture_liquidfilter.png' | relative_url }}) => HI
+Les **filters** sont indiqué par un **pipe** (AltGr + 6). Ils permettent de modifier l'output d'un object. Vous connaissez déjà le filtre `| relative_url`. Dans l'exemple ci-dessous, le filtre `| capitalize` permet d'afficher l'object en lettres capitales : [![filter Liquid]({{ '/assets/images/capture_liquidfilter.png' | relative_url }})]({{ '/assets/images/capture_liquidfilter.png' | relative_url }}) => HI.
 
 Il y a plein de filtres qui permettent de faire beaucoup (vraiment beaucoup) de choses. Vous allez en voir quelques-uns dans ce tuto, mais Nnhésitez pas à consulter [la doc de Liquid](https://shopify.github.io/liquid/){:target="_blank"} pour vous y retrouver !
 
