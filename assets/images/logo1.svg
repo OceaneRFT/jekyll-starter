@@ -22,6 +22,7 @@
 	.st5{fill:#333333;}
 	.st6{opacity:0.5;fill:#FFFFFF;enable-background:new    ;}
 	.st7{fill:#FFFFFF;}
+	.st8 {fill: #fff;cx: 60.7;cy: 61.5;rx: 60; ry: 60; }
 </style>
 <switch>
 	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
@@ -29,6 +30,7 @@
 		</i:pgfRef>
 	</foreignObject>
 	<g i:extraneous="self">
+		<ellipse xmlns="http://www.w3.org/2000/svg" class="st8" cx="41" cy="101" rx="1" ry="2"/>
 		<g>
 			<path class="st0" d="M62.45,1.5C29.11,1.5,2.07,28.53,2.07,61.89c0,26.68,17.3,49.32,41.3,57.3c3.02,0.56,4.13-1.31,4.13-2.91
 				c0-1.44-0.06-6.2-0.08-11.24c-16.8,3.65-20.34-7.13-20.34-7.13c-2.75-6.98-6.7-8.84-6.7-8.84c-5.48-3.75,0.41-3.67,0.41-3.67

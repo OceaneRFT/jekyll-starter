@@ -92,3 +92,18 @@ h1#welcome-to-jekyll-starter-{
     text-align:center;
     padding-bottom: 15px;
 }
+
+.end{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.end-link{
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+    &:hover{
+        color: $color;
+    }
+}
