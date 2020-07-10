@@ -1,7 +1,7 @@
 /* Reset Css */
 
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -29,20 +29,23 @@ body{
                 font-size: 100%;
                 color: #000000;
                 word-wrap: break-word;
+                margin-right: 2px;
                 padding: 5px;
                 border: 1px solid rgba(0, 0, 0, 0.30);
                 border-radius: 5px;
                 background-color: rgba(153, 153, 153, 0.20);
             }
-            & p > a {
-                margin: auto;
-                display: inline-block;
-                width: 100%;
+            & .screenshot {
+                display: block;
                 text-align: center;
+                & img {
+                    max-width: 100%;
+                    height: auto;
+                    box-shadow: 5px 5px 6px -3px black;
+                }
             }
-            & a > img {
-                max-width: 100%;
-                height: auto;
+            & a {
+                text-decoration: underline;
             }
         }
     }
@@ -57,35 +60,12 @@ body{
         flex-direction: column;
         & .nav_right-link {
             @include police ;
+            
             &:hover {
                 text-decoration: underline;
             }
         }
     }
-}
-
-img {
-    box-shadow: 5px 5px 6px -3px black;
-}
-
-code {
-    font-size: 107.5%;
-    @include police ;
-    word-wrap: break-word;
-    padding: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.30);
-    border-radius: 5px;
-    background-color: rgba(153, 153, 153, 0.20);
-   
-
-}
-
-ol{
-    margin-bottom: 25px;
-}
-
-a{
-    @include police ;
 }
 
 h1#welcome-to-jekyll-starter-{

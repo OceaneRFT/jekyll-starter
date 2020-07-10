@@ -27,14 +27,15 @@
 }
 .content {
     &-footer{
-    display: flex;                                   /////////////// next-previous
-    justify-content: space-between;
-    margin: 0px 15px;
+        height: 40px;
+        display: flex;                                   /////////////// next-previous
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 15px;
     
         & .label {
             @include police;
-        
-    }
+        }
     }
     &-nav-button:hover {
         @include police;

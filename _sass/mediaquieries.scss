@@ -9,18 +9,26 @@
 /* End navbar */
 
 /* global */
-
-@media (max-width: 1590px) {
+@media screen and (min-width: 1591px) {
     .container {
         max-width: 900px;
-    
         & .nav-right {
-        margin-left: 885px;
+            margin-left: 885px;
         }
     }
 }
 
-@media (max-width: 1400px) {
+
+@media screen and (min-width: 1401px) and (max-width: 1590px) {
+    .container {
+        max-width: 800px;
+        & .nav-right {
+        margin-left: 785px;
+        }
+    }
+}
+
+@media screen and  (max-width: 1400px) {
     .container {
         & .nav-right {
             display: none;
@@ -33,16 +41,6 @@
         }
         & code {
             font-size: 1rem;
-        }
-    }
-}
-
-@media (max-width: 610px) {
-    .container {
-        max-width: 600px;
-    
-        & .nav-right {
-            display: none;
         }
     }
 }
