@@ -2,6 +2,7 @@
 layout: tutoriels
 title: Le style
 order: 7
+part: 1
 ---
 # Style de page
 
