@@ -1,8 +1,6 @@
-$theme-dark: #202020;
-$theme-smooth: #f8f9fa;
-$theme-dark: #202020;
-$theme-smooth: #f8f9fa;
-
+$colour-link: white;
+$theme-blue: rgb(106, 178, 207);
+$color: $theme-blue;
 
 @mixin bg-nav($color) {
     @if ($color == $theme-dark) {
@@ -10,11 +8,27 @@ $theme-smooth: #f8f9fa;
     }@if ($color == $theme-smooth){
         $color: darken($theme-smooth, 5%)
     }
-    @if ($color == $theme-smooth){
-        $color: darken($theme-smooth, 5%)
-    }
-    @if ($color == $theme-smooth){
-        $color: darken($theme-smooth, 5%)
-    }
     background-color: $color;
 }
+
+
+
+
+
+@mixin police {
+    @if ( lightness($color) > 25% ){ 
+        $color: darken($color, 90%);
+        color: $color;
+    }@else {
+        $color: lighten($color, 90%);
+        color: $color;
+        }
+@content;
+}
+
+@mixin theme ($color) {
+    $color: lighten($color,15%);
+        background-color: $color;
+@content;
+}
+

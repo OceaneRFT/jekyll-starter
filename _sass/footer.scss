@@ -1,11 +1,47 @@
 
+.page-footer {
+    & .row {
+        margin-top: 15px;
+       & .logodwwm{
+        width: 150px;
+        height: auto;
+        box-shadow: unset;
+        }
+        & .logogit{
+        width: 50px;
+        }
+        & .col-footer{
+            display: flex;
+            justify-content: center;
+        }
+        & .col-footer{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        }
+        & .col-footer:last-child{
+            margin-bottom: 0;
+        }
+        & .btn{
+        color: white;
+        } 
+    }
+    
+}
 
-.formation{
-       color: white;
-       font-size: 60px;
-       }
+
+
+
+
+
+
+
+
 
 
     
 
-  
+
+
+
+

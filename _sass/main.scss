@@ -14,14 +14,16 @@ body{
 // Style de l'ensemble du site
 .container {
     height: 100%;
-    background-color: rgb(106, 178, 207);
+    background-color: $color;
+
     & .row-page {
         margin: 0;
         & .col-page {
             margin-top: 15px;
             margin-bottom: 15px;
-            background-color: rgba(251, 241, 241, 0.376);
+             @include theme ($theme-blue);
             border-radius: 25px;
+            @include police;
             & code {
                 display: inline-block;
                 font-size: 100%;
@@ -47,14 +49,14 @@ body{
     & .nav-right {
         margin-left: 1085px;
         padding: 15px;
-        background-color:  rgb(160, 202, 220);
+        @include theme ($theme-blue);
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         position: fixed;
         display: flex;
         flex-direction: column;
         & .nav_right-link {
-            color: black;
+            @include police ;
             &:hover {
                 text-decoration: underline;
             }
@@ -66,11 +68,22 @@ img {
     box-shadow: 5px 5px 6px -3px black;
 }
 
+code {
+    font-size: 107.5%;
+    @include police ;
+    word-wrap: break-word;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+    background-color: rgba(153, 153, 153, 0.20);
+   
+
+}
 
 ol{
     margin-bottom: 25px;
 }
 
 a{
-    color: black;
+    @include police ;
 }
