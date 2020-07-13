@@ -1,6 +1,6 @@
 $colour-link: white;
 $theme-blue: rgb(106, 178, 207);
-$theme-color: black;
+$theme-color: $theme-blue;
 
 @mixin police {
     @if ( lightness($theme-color) > 25% ){ 
