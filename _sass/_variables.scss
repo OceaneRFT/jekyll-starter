@@ -1,34 +1,32 @@
 $colour-link: white;
 $theme-blue: rgb(106, 178, 207);
-$color: $theme-blue;
-
-@mixin bg-nav($color) {
-    @if ($color == $theme-dark) {
-        $color: lighten($theme-dark, 5%);
-    }@if ($color == $theme-smooth){
-        $color: darken($theme-smooth, 5%)
-    }
-    background-color: $color;
-}
-
-
-
-
+$theme-color: black;
 
 @mixin police {
-    @if ( lightness($color) > 25% ){ 
-        $color: darken($color, 90%);
-        color: $color;
+    @if ( lightness($theme-color) > 25% ){ 
+        $theme-color: darken($theme-color, 90%);
+        color: $theme-color;
     }@else {
-        $color: lighten($color, 90%);
-        color: $color;
+        $theme-color: lighten($theme-color, 90%);
+        color: $theme-color;
         }
 @content;
 }
 
 @mixin theme{
-        $color: lighten($color,15%);
-        background-color: $color;
+        $theme-color: lighten($theme-color,15%);
+        background-color: $theme-color;
 @content;
 }
 
+
+@mixin marker {
+    @if ( lightness($theme-color) > 25% ){ 
+        $theme-color: darken($theme-color, 90%);
+        border-bottom-color: $theme-color;
+    }@else {
+        $theme-color: lighten($theme-color, 90%);
+        border-bottom-color: $theme-color;
+        }
+@content;
+}

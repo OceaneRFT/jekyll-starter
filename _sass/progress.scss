@@ -52,7 +52,7 @@ section.progress {
         height: 0;
         width: 0;
         border: solid transparent;
-        border-bottom-color: #000;
+        @include marker;
         border-width: 0 6px 8px 6px;
         top: 35px;
         position: absolute;

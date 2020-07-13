@@ -2,7 +2,7 @@
 
 
 .navbar {
-    background-color: $theme-blue ;
+    background-color: $theme-color ;
     height: 56px;
     ;
     & .nav-link {
@@ -66,8 +66,14 @@ svg.nav_icon .background {
     fill: #333;
 }
 
-.dropdown-item:hover{
+.dropdown-item{
+    &:hover{
     @include theme;
+    @include police;
+    }
+    &:active{
+        @include theme;
+    }
 }
 
 .beautiful-icon{

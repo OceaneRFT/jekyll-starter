@@ -2,6 +2,8 @@
 layout: tutoriels
 title: La collection _posts
 tags: collection posts tags catégories
+order: 9
+part: 1
 ---
 
 
