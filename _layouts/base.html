@@ -41,7 +41,9 @@
     <div class="container">
         <div class="row row-page">
             {{ content }}
+            {% include modal.html %}
         </div>
+        
         {% include footer.html %}
     </div>
 
@@ -59,7 +61,7 @@
         crossorigin="anonymous "></script>
     <!-- Fin boot -->
 
-    <script src="{{ '/assets/js/lenotre.js' | relative_url }}"></script>
+    
 </body>
 
 </html>
