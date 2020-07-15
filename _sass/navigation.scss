@@ -3,8 +3,7 @@
 
 .navbar {
     background-color: $theme-color ;
-    height: 56px;
-    ;
+    padding: 0.65rem 1rem;
     & .nav-link {
         color: $colour-link;
     }
