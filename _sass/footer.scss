@@ -2,34 +2,33 @@
 .page-footer {
     & .row {
         margin-top: 15px;
-       & .logodwwm{
+       & .logodwwm {
         width: 150px;
         height: auto;
         box-shadow: unset;
         }
-        & .logogit{
+        & .logogit {
         width: 50px;
         }
-        & .col-footer{
+        & .col-footer {
             display: flex;
             justify-content: center;
         }
-        & .col-footer{
+        & .col-footer {
         display: flex;
         justify-content: center;
         margin-bottom: 15px;
         }
-        & .col-footer:last-child{
+        & .col-footer:last-child {
             margin-bottom: 0;
         }
-        & .btn{
+        & .btn {
         @include police;
         } 
     }
-    
 }
 
-.footer-copyright{
+.footer-copyright {
     @include police ;
 }
 
