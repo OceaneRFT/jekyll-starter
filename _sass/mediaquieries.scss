@@ -28,7 +28,7 @@
     }
 }
 
-@media screen and  (max-width: 1400px) {
+@media screen and (min-width: 501px) and (max-width: 1400px) {
     .container {
         & .nav-right {
             display: none;
@@ -41,6 +41,20 @@
         }
         & code {
             font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-footer {
+        & .content-nav-button {
+            & .label {
+                display: none;
+            }
+            & .arrow {
+                font-size: 50px;
+                @include police;
+            }
         }
     }
 }

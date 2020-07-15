@@ -3,9 +3,9 @@
 
 .navbar {
     background-color: $theme-color ;
-    padding: 0.65rem 1rem;
+    padding: 0.65rem 1re;
     & .nav-link {
-        color: $colour-link;
+        @include police;
     }
     & .nav-link-icon {
         width: 50px;
@@ -33,6 +33,10 @@
         margin: 0px 15px;
     
         & .label {
+            font-size: 1.2rem;
+            @include police;
+        }
+        & .arrow {
             @include police;
         }
     }
