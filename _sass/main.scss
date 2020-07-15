@@ -88,3 +88,19 @@ h1#welcome-to-jekyll-starter-{
     }
 }
 
+.arrow{
+    @include police;
+}
+
+svg{
+    @include svg ;
+}
+
+a{
+    @include police;
+    
+    &:hover{
+        @include police;
+        font-size: 110%;
+    }
+}
