@@ -4,22 +4,33 @@
 .navbar {
     background-color: $theme-color;
     padding: 0.65rem 1re;
+    min-height: 56px;
     & .nav-link {
         @include police;
     }
-    & .dropdown-item{
-        &:hover{
-        @include theme;
-        @include police;
-        }
-        &:active{
+    & .main-active {
+        font-weight: bold;
+    }
+    & .dropdown {
+        &-item {
+            &:hover{
             @include theme;
+            @include police;
+            }
+            &:active{
+                @include theme;
+                background-color: unset;
+            }
+            &.active {
+                background-color: $theme-color;
+            }
         }
     }
+    
     & .nav-link-icon {
         width: 50px;
         padding: 0;
-        margin: 5px;
+        margin: 11px;
         position: absolute;
         z-index: 10000;
         right: 0;
@@ -46,17 +57,25 @@
         margin-left: 1085px;
         padding: 15px;
         @include theme;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
         position: fixed;
         display: flex;
         flex-direction: column;
+        top: 87px;
+        border-radius: 30px;
+        box-shadow: none;
         & .nav_right-link {
             @include police ;
             
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+    
+    & .active {
+        font-weight: bold;
+        &:before {
+            content: "> ";
         }
     }
     & .beautiful-icon{
@@ -87,7 +106,6 @@
         }
         & .arrow {
             @include police;
-            text-transform: none;
         }
     }
     &-nav-button{
@@ -95,5 +113,6 @@
     }
     &-nav-button:hover {
         @include police;
+        text-decoration: unset;
     }
 }

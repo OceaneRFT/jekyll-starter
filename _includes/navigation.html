@@ -13,10 +13,10 @@
         <ul class="navbar-nav mr-auto">
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ '/index.html' | relative_url }}">Accueil <span class="sr-only">(current)</span></a>
+                <a class="nav-link {% if page.link == '/index.html' %}main-active{% endif %}" href="{{ '/index.html' | relative_url }}">Accueil <span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {% if page.layout == 'tutoriels' %}main-active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Tutoriels
@@ -28,7 +28,7 @@
                     qui se trouve dans la collection tutoriels avec un "S".  -->
 
                     {% for tutoriel in site.tutoriels %}
-                        <a class="dropdown-item " href="{{ tutoriel.url | relative_url }}" {% if page.url == tutoriel.url %}class="active"{% endif %}>{{ tutoriel.title }}</a>
+                        <a class="dropdown-item {% if tutoriel.url == page.url %}active{% endif %}" href="{{ tutoriel.url | relative_url }}" {% if page.url == tutoriel.url %}class="active"{% endif %}>{{ tutoriel.title }}</a>
                     {% endfor %}
                 </div>
             </li>
@@ -36,7 +36,7 @@
             <!-- Cette boucle permet de générer automatiquement un onglet avec un lien vers nos différentes pages à partir du data file navigation.yml -->
             {% for item in site.data.navigation %}
             <li class="nav-item">
-                <a class="nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link | relative_url }}" >{{ item.name }}</a>
+                <a class="nav-link {% if page.url == item.link %}main-active{% endif %}" href="{{ item.link | relative_url }}" >{{ item.name }}</a>
             </li>
             {% endfor %}
 
