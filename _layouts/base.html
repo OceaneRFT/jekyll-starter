@@ -18,6 +18,9 @@
     -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
+                      <!-- Un commentaire soon  -->
+    <link rel="icon" type="image/png" href="{{'assets/images/logo1.svg'| relative_url }}" />
+
     <!-- 
         Afin de créer un CSS par page si vous voulez appliquer un style différent nous devons donner à Jekyll un lien qui lui
         indiquera quel CSS utiliser nous utilisons ici "append" car nous ne pouvons pas mettre d'accolades dans une accolade
@@ -25,9 +28,9 @@
     {% if page.style_name != null %}
     <link rel="stylesheet" href="{{ '/assets/css/' | append: page.style_name | append: '.css' | relative_url }}" />
     {% endif %}
-
-    <title>Jekyll Starter Kit ++</title>
+    <!-- Cela permet d'afficher le titre de chaque page( renseigné dans la variable "title" du front-matter de chaque page). -->
     <title>{{ page.title }}</title>
+    
 </head>
 
 <body>
@@ -38,8 +41,14 @@
     <div class="container">
         <div class="row row-page">
             {{ content }}
+            {% include modal.html %}
         </div>
+        
+        {% include footer.html %}
     </div>
+
+    
+    
     <!-- script bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
@@ -50,7 +59,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
         crossorigin="anonymous "></script>
+    <!-- Fin boot -->
 
+    
 </body>
 
 </html>

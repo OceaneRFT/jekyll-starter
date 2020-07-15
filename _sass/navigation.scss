@@ -2,7 +2,8 @@
 
 
 .navbar {
-    background-color: $theme-blue ;
+    background-color: $theme-color ;
+    height: 56px;
     ;
     & .nav-link {
         color: $colour-link;
@@ -26,23 +27,30 @@
 }
 .content {
     &-footer{
-    display: flex;                                   /////////////// next-previous
-    justify-content: space-between;
-    margin: 0px 15px;
+        height: 40px;
+        display: flex;                                   /////////////// next-previous
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 15px;
     
         & .label {
-            @include police ($theme-blue);
-        
-    }
+            @include police;
+        }
     }
     &-nav-button:hover {
-        @include police ($theme-blue);
+        @include police;
 
     }
 }
-a.content-nav-button{
-    @include police ($theme-blue);
+a{
+& .content-nav-button{
+    @include police;
 }
+& img{
+    box-shadow:none
+}
+}
+
 
 .navbar-toggler {
     width: 56px;
@@ -56,4 +64,26 @@ a.content-nav-button{
 
 svg.nav_icon .background {
     fill: #333;
+}
+
+.dropdown-item{
+    &:hover{
+    @include theme;
+    @include police;
+    }
+    &:active{
+        @include theme;
+    }
+}
+
+.beautiful-icon{
+    width: 100%;
+    box-shadow:none
+}
+
+.icon-home{
+    width: 40%;
+    transform: translate(-50%);
+    left: 50%;
+    position: relative;
 }

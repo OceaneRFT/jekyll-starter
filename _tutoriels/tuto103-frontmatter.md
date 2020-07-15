@@ -7,7 +7,7 @@ part: 1
 # Utiliser le Front Matter
 Le Front Matter (matière en avant), doit, comme son nom l'indique, apparaître en premier dans un fichier : 
 
-[![front matter vide]({{ '/assets/images/capture_frontmattervide.png' | relative_url }})]({{ '/assets/images/capture_frontmattervide.png' | relative_url }})
+[![front matter vide]({{ '/assets/images/capture_frontmattervide.png' | relative_url }})]({{ '/assets/images/capture_frontmattervide.png' | relative_url }}){: .screenshot}
 
 Le Front Matter permet à Jekyll :
 - de savoir quels fichiers il doit compiler
@@ -15,7 +15,7 @@ Le Front Matter permet à Jekyll :
 
 Par exemple, pour cette page, nous avons le Front Matter suivant :
 
-[![front matter de la page]({{ '/assets/images/capture_frontmatter.png' | relative_url }})]({{ '/assets/images/capture_frontmatter.png' | relative_url }})
+[![front matter de la page]({{ '/assets/images/capture_frontmatter.png' | relative_url }})]({{ '/assets/images/capture_frontmatter.png' | relative_url }}){: .screenshot}
 
 Ce Front Matter contient deux informations (ou variables) que nous avons définies pour les besoins du site :
 - le layout (on en parle juste après)
@@ -25,7 +25,7 @@ On ne dirait pas comme ça, mais le Front Matter n'est pas écrit en Markdown, i
 
 Ok, et donc, stocker ces variables, ça sert à... ? A pouvoir les réutiliser facilement quand on en aura besoin ! Pour afficher le titre de la page (et ce, peu importe la page affichée), on pourra indiquer :
 
-[![commande liquide page.title]({{ '/assets/images/capture_liquid.png' | relative_url }})]({{ '/assets/images/capture_liquid.png' | relative_url }})
+[![commande liquide page.title]({{ '/assets/images/capture_liquid.png' | relative_url }})]({{ '/assets/images/capture_liquid.png' | relative_url }}){: .screenshot}
 
 Cela sera très pratique quand vous aurez besoin de faire des boucles et des conditions.
 

@@ -1,4 +1,8 @@
 ---
 layout: default
+title: Ressources
 ---
-Par ici les ressources !
+In comming
+
+
+<!-- Par ici les ressources ! -->
