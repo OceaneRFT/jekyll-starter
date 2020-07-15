@@ -18,21 +18,21 @@ Dans notre image ci-dessous `style_name`, "style_name" correspond au nom de la v
 "front-matter", afin que Jekyll récupère l'information. Vous pouvez lui attribuer n'importe quel nom, ici elle se nomme `style_name`.
 
 
-[![objects style ]({{ '/assets/images/capture_frontmatter-tuto.png' | relative_url }})]({{ '/assets/images/capture_frontmatter-tuto.png' | relative_url }}){: .screenshot}
+[![objects style ]({{ '/assets/images/capture_frontmatter-tuto.png' | relative_url }})]({{ '/assets/images/capture_frontmatter-tuto.png' | relative_url }}){: .screenshot}{:target="_blank"}
 
 Nous passons à la seconde étape ! Retournons à notre fichier `base.html` 
 
-[![objects style]({{ '/assets/images/capture_bouclestyle.png' | relative_url }})]({{ '/assets/images/capture_bouclestyle.png' | relative_url }}){: .screenshot}
+[![objects style]({{ '/assets/images/capture_bouclestyle.png' | relative_url }})]({{ '/assets/images/capture_bouclestyle.png' | relative_url }}){: .screenshot}{:target="_blank"}
 
-Une minute, cette longue ligne de code me semble incompréhensible, je n'y arriverai jamais ...
+Une minute, cette longue ligne de code me semble incompréhensible, je n'y arriverai jamais...
 
 Pas de panique, nous avons une configuration un peu spéciale dans notre exemple.
 
 Nous ne pouvons pas insérer des accolades dans des accolades car le code inscrit ne sera pas pris en compte. C'est pour cela que nous utilisons la propriétée `| append:` qui permet de séparer les élèments au sein de cette expression (une expression correspond à l'ensemble des valeurs comprises entre les `{ }`).
 
-Nous donnons une condition, si dans notre "front-matter" nous insérons une variable, alors la page sélectionnera le style définit sinon, il prendra le style défini par défault.
+Nous donnons une condition : si dans notre "front-matter" nous insérons une variable, alors la page sélectionnera le style défini sinon, il prendra le style défini par défaut.
 
-Voila, vous avez maintenant, toutes les clefs en mains pour créer des styles par milliers !!!
+Voilà, vous avez maintenant, toutes les clefs en mains pour créer des styles par milliers !!!
 
 
 
