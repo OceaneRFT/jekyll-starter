@@ -51,23 +51,6 @@ body {
             }
         }
     }
-    & .nav-right {
-        margin-left: 1085px;
-        padding: 15px;
-        @include theme;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        & .nav_right-link {
-            @include police ;
-            
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
 }
 
 h1#welcome-to-jekyll-starter-{

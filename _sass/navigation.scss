@@ -1,4 +1,4 @@
-// Style de la barre de navigation
+// Style des barres de navigation
 
 
 .navbar {
@@ -6,6 +6,15 @@
     padding: 0.65rem 1re;
     & .nav-link {
         @include police;
+    }
+    & .dropdown-item{
+        &:hover{
+        @include theme;
+        @include police;
+        }
+        &:active{
+            @include theme;
+        }
     }
     & .nav-link-icon {
         width: 50px;
@@ -19,11 +28,51 @@
             width: 100%;
         }
     }
+    & .navbar-toggler {
+        width: 56px;
+            &:focus {
+                outline: transparent;
+            }
+        & .logo_burgermenu {
+        width: 100%;
+        }
+    }
+
 }
 
-.nav-right {
-    box-shadow: 2px 2px 8px;
+.container {
+    & .nav-right {
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        margin-left: 1085px;
+        padding: 15px;
+        @include theme;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        & .nav_right-link {
+            @include police ;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    & .beautiful-icon{
+        width: 100%;
+        box-shadow:none
+    }
+    & .icon-home{
+        width: 40%;
+        transform: translate(-50%);
+        left: 50%;
+        position: relative;
+    }
 }
+    
+
+
 .content {
     &-footer{
         height: 40px;
@@ -31,62 +80,20 @@
         justify-content: space-between;
         align-items: center;
         margin: 0px 15px;
-    
+
         & .label {
             font-size: 1.2rem;
             @include police;
         }
         & .arrow {
             @include police;
+            text-transform: none;
         }
+    }
+    &-nav-button{
+        @include police;
     }
     &-nav-button:hover {
         @include police;
-
     }
-}
-a{
-& .content-nav-button{
-    @include police;
-}
-& img{
-    box-shadow:none
-}
-}
-
-
-.navbar-toggler {
-    width: 56px;
-      &:focus {
-          outline: transparent;
-      }
-    & .logo_burgermenu {
-    width: 100%;
-}
-}
-
-svg.nav_icon .background {
-    fill: #333;
-}
-
-.dropdown-item{
-    &:hover{
-    @include theme;
-    @include police;
-    }
-    &:active{
-        @include theme;
-    }
-}
-
-.beautiful-icon{
-    width: 100%;
-    box-shadow:none
-}
-
-.icon-home{
-    width: 40%;
-    transform: translate(-50%);
-    left: 50%;
-    position: relative;
 }
