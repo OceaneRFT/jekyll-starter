@@ -1,6 +1,7 @@
 $colour-link: white;
 $color-blue: rgb(106, 178, 207); //Theme choisi par l'équipe par défaut.
-$theme-color: rgb(106, 178, 207); //La couleur du thème avec laquelle on travaille toutes nos mixin qui nous permet juste de changer sa valeur pour modifier notre thème.
+$color-grey: #31302f;
+$theme-color: $color-grey; //La couleur du thème avec laquelle on travaille toutes nos mixin qui nous permet juste de changer sa valeur pour modifier notre thème.
 
 
 // Cette mixin sert à changer la couleur de police en fonction de la luminosité de notre background.
