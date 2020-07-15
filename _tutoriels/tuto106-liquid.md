@@ -16,7 +16,9 @@ Les **tags** sont utilisés pour créer des boucles (*FOR*) et des conditions (*
 
 [![boucle Liquid]({{ '/assets/images/capture_boucle.png' | relative_url }})]({{ '/assets/images/capture_boucle.png' | relative_url }}){: .screenshot}
 
-Dans l'exemple ci-dessus, la boucle nous permet de créer un lien pour chaque tutoriel dans la collection tutoriels (notez bien la différence singulier / pluriel, c'est important !). L'output du lien sera le titre du tutoriel. C'est la boucle que nous avons utilisées pour l'onglet *TUTORIELS* de notre barre de navigation et notre menu latéral : dès qu'on ajoute un document à notre collection tutoriels, un lien est généré et ajouté automatiquement chaque menu. Plutôt sympa :)
+Dans l'exemple ci-dessus, la boucle nous permet de créer un lien pour chaque tutoriel dans la collection tutoriels (notez bien la différence singulier / pluriel, c'est important !). 
+
+L'output du lien sera le titre du tutoriel. C'est la boucle que nous avons utilisées pour l'onglet *TUTORIELS* de notre barre de navigation et notre menu latéral : dès qu'on ajoute un document à notre collection tutoriels, un lien est généré et ajouté automatiquement chaque menu. Plutôt sympa !
 
 [![Dropdown menu Tutoriels déroulé]({{ '/assets/images/capture_menututo.png' | relative_url }})]({{ '/assets/images/capture_menututo.png' | relative_url }}){: .screenshot} 
 

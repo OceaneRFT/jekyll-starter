@@ -57,6 +57,6 @@ Dans votre dossier racine, créez un fichier txt `.gitignore`. Ce fichier servir
 
 [![fichier gitignore]({{ '/assets/images/capture_gitignore.png' | relative_url }})]({{ '/assets/images/capture_gitignore.png' | relative_url }}){: .screenshot}
 
-Vous aurez aussi sûrement besoin d'un fichier `_config.yml`, qu'il faut créer à la racine de votre dossier (comme le fichier `.gitignore`). Ce fichier nous servira, entre autres, pour créer des collections personnalisés (on en reparle un peu plus tard).
+Vous aurez aussi sûrement besoin d'un fichier `_config.yml`, qu'il faut créer à la racine de votre dossier (comme le fichier `.gitignore`). Ce fichier nous servira, entre autres, pour créer des collections personnalisés ( on en reparle un peu plus tard).
 
 Ouhlala ! Ca fait vraiment beaucoup de dossiers tout ça ! Ne vous inquiétez pas, on va voir tout cela en détails.

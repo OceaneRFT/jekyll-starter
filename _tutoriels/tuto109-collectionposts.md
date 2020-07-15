@@ -9,13 +9,23 @@ part: 1
 
 
 # La collection _posts
-Jekyll est orienté vers le blogging. Il utilise donc une collection (un dossier) prédéfinie pour gérer des pages de posts : c'est la collection ... `_posts` ! Mais si, souvenez-vous, on vous a même fait créer un dossier qui porte le même nom au [début du tutoriel]({{ '/tutoriels/tuto102-dossiers.html' | relative_url }}){:target="_blank"} ! Vous l'avez peut-être remarqué, mais notre site Jekyll n'est pas vraiment un blog qui utilise des posts. Pour vous expliquer ce qu'est la collection `_posts`, nous allons donc prendre en exemple le [très bon site réalisé par nos collègues](AJOUTER LIEN) ^^. 
+Jekyll est orienté vers le blogging. Il utilise donc une collection (un dossier) prédéfinie pour gérer des pages de posts : c'est la collection ... `_posts` ! 
 
-Pour que les fichiers dans votre dossier `_posts` soient correctement compilés par Jekyll, vous devez respecter une nomenclature bien précise pour les nommer : la date de publication, puis le titre de l'article, puis l'extension du fichier (la plupart du temps, vos fichiers seront en Markdown car il s'agit de fichier de contenu, et non de structure). **Attention** Jekyll reconnaîtra uniquement les dates au format `année-mois-jour`. Voici un exemple de nom de fichier :
+Mais si, souvenez-vous, on vous a même fait créer un dossier qui porte le même nom au [début du tutoriel]({{ '/tutoriels/tuto102-dossiers.html' | relative_url }}){:target="_blank"} ! 
+
+Vous l'avez peut-être remarqué, mais notre site Jekyll n'est pas vraiment un blog qui utilise des posts. Pour vous expliquer ce qu'est la collection `_posts`, nous allons donc prendre en exemple le [très bon site réalisé par nos collègues](AJOUTER LIEN). 
+
+Pour que les fichiers dans votre dossier `_posts` soient correctement compilés par Jekyll, vous devez respecter une nomenclature bien précise pour les nommer : la date de publication, puis le titre de l'article, puis l'extension du fichier (la plupart du temps, vos fichiers seront en Markdown car il s'agit de fichier de contenu, et non de structure). 
+
+**ATTENTION !!!** Jekyll reconnaîtra uniquement les dates au format `année-mois-jour`. 
+
+Voici un exemple de nom de fichier :
 
 [![arborescence fichier _posts]({{ '/assets/images/capture_fichierposts.png' | relative_url }})]({{ '/assets/images/capture_fichierposts.png' | relative_url }}){: .screenshot}
 
-Tous vos fichiers doivent également commencer par du Front Matter (ne serait-ce que pour indiquer le layout que vous souhaitez appliquer). Prenons comme exemple cette page de site :
+Tous vos fichiers doivent également commencer par du Front Matter (ne serait-ce que pour indiquer le layout que vous souhaitez appliquer). 
+
+Prenons comme exemple cette page de site :
 
 [![code d'un post]({{ '/assets/images/capture_article.png' | relative_url }})]({{ '/assets/images/capture_article.png' | relative_url }}){: .screenshot}
 
@@ -26,6 +36,7 @@ Vous pouvez ajouter des **tags** et des **catégories** pour référencer vos ar
 Les tags sont des mots-clés que vous pouvez associer à vos articles. Un article peut donc avoir plusieurs tags. 
 Les tags sont définies dans le Front Matter de vos fichiers de contenu. Il y a deux façons de les indiquer :
 - Vous pouvez utiliser la clé `tag`  au singulier. Tout ce que vous écrivez comme sera considéré comme **une seule entrée**. Par exemple,si nous écrivons `tag: débutant html`, le tag créé sera "débutant html". 
+
 - Vous pouvez utiliser  la clé `tags` au pluriel. Tout ce que vous écrivez et séparez par un espace sera alors considéré comme **plusieurs entrées**. C'est la méthode qui a été utilisée pour la page que nous avons vue plus haut :
 
 [![Front matter avec les tags]({{ '/assets/images/capture_tags.png' | relative_url }})]({{ '/assets/images/capture_tags.png' | relative_url }}){: .screenshot}
@@ -67,6 +78,11 @@ Comme pour les tags :
 
 - Jekyll enregistre toutes les catégories que vous créez dans `site.categories`.
 
-Mais, les catégories peuvent aussi être générées d'après le chemin de votre article. Un article avec le chemin suivant : `html/cours/_posts/2020-07-10-premier-cours-html` aura automatiquement deux catégories correspondant au deux dossiers au-dessus de `_posts` : `html` et `cours`. 
+Mais, les catégories peuvent aussi être générées d'après le chemin de votre article. 
+Un article avec le chemin suivant : `html/cours/_posts/2020-07-10-premier-cours-html` aura automatiquement deux catégories,
 
-Les catégories peuvent aussi faire partie de l'URL qui sera généré pour l'article (contrairement aux tags). Si on reprend notre exemple d'article de ci-dessus, l'URL généré sera : `html/cours/html%cours/2020/07/10/-premier-cours-html.html`.
+correspondant au deux dossiers au-dessus de `_posts` : `html` et `cours`. 
+
+Les catégories peuvent aussi faire partie de l'URL qui sera généré pour l'article (contrairement aux tags). Si on reprend notre exemple d'article de ci-dessus, l'URL généré sera : 
+
+`html/cours/html%cours/2020/07/10/-premier-cours-html.html`.

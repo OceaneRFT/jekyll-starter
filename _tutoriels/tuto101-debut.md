@@ -9,7 +9,10 @@ part: 1
 
 # Jekyll - Premières pierres
 
+Pour commencer,
+
 Créez un dossier pour héberger le projet. Dans ce dossier, créez un fichier `index.md`.
+
 Ouvrez le terminal (astuce : raccourci sur VSCode pour ouvrir le terminal : *ctrl + ù*).
 
 

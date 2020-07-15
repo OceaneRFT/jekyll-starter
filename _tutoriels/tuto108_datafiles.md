@@ -19,7 +19,9 @@ Un groupe données relatif à une page s'appelle un **item**. Si on demande l'af
 [![expression item.name]({{ '/assets/images/capture_item.png' | relative_url }})]({{ '/assets/images/capture_item.png' | relative_url }}){: .screenshot}
 
 
-Maintenant, nous allons pouvoir utiliser ces informations dans notre barre de navigation. Ouvrons notre include `navigation.html` (notre fichier contenant la structure de notre barre de navigation). Pour l'instant, le code de notre barre de navigation ressemble à cela : 
+Maintenant, nous allons pouvoir utiliser ces informations dans notre barre de navigation. Ouvrons notre include `navigation.html` (notre fichier contenant la structure de notre barre de navigation). 
+
+Pour l'instant, le code de notre barre de navigation ressemble à cela : 
 
 [![code de la barre de navigation]({{ '/assets/images/capture_codenavigation.png' | relative_url }})]({{ '/assets/images/capture_codenavigation.png' | relative_url }}){: .screenshot}
 
@@ -31,7 +33,9 @@ Humm... oui... et en français, ça donne quoi ?
 
 [![première ligne de la boucle]({{ '/assets/images/capture_navigationfor.png' | relative_url }})]({{ '/assets/images/capture_navigationfor.png' | relative_url }}){: .screenshot}
 
-Cette première expression indique à Jekyll qu'il doit aller chercher les informations de chaque item contenu dans le fichier `site.data.navigation`. Pour chacun de ces items, il doit effectuer les procédures indiquées dans notre boucle *FOR* :
+Cette première expression indique à Jekyll qu'il doit aller chercher les informations de chaque item contenu dans le fichier `site.data.navigation`. 
+
+Pour chacun de ces items, il doit effectuer les procédures indiquées dans notre boucle *FOR* :
 
 [![code de la boucle qui génère les onglets dans la barre de navigation]({{ '/assets/images/capture_navigationli.png' | relative_url }})]({{ '/assets/images/capture_navigationli.png' | relative_url }}){: .screenshot}
 

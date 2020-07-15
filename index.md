@@ -19,8 +19,10 @@ Jekyll est un générateur de site statique (ce qui veut dire qu'il ne possède 
 
 Développement dynamique : un développement basé sur la séparation des responsabilités. Grosso modo, vous écrivez des bouts de code correspondant à des éléments précis (la barre de navigation, le footer...), et vous assemblez ces bouts de code grâce à la moulinette Jekyll (on appelle cela la **compilation**).
 
-Le but est de simplifier la maintenance de votre code : au lieu de répéter le doctype dans les 120 pages de votre site, vous pourrez l'indiquer une seule fois. Si vous avez besoin de changer un élément dans votre doctype, vous n'avez à le modifier qu'à un seul endroit (au lieu de faire 120 copiés-collés :)).
+Le but est de simplifier votre code : au lieu de répéter le doctype dans les 120 pages de votre site, vous pourrez l'indiquer une seule fois. Si vous avez besoin de changer un élément dans votre doctype, vous n'avez à le modifier qu'à un seul endroit (au lieu de faire 120 copiés-collés).
 
 Alors qu'un site dynamique, son contenu peut varier en fonction d'informations (heure, nom de l'utilisateur, formulaire rempli par l'utilisateur, etc.)
 
-Jekyll se base donc sur la séparation du contenu et de la structure de votre site. Vos fichiers liés à la structure seront en HTML, vos fichiers de contenu en Markdown. 
+Jekyll se base donc sur la séparation du contenu et de la structure de votre site. Vos fichiers liés à la structure seront en HTML, vos fichiers de contenu en Markdown.
+
+Prêt à créer un blog statique avec ce fantastique Jekyll ? Suivez-nous !

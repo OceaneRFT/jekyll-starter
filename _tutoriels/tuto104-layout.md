@@ -8,7 +8,7 @@ part: 1
 
 Souvenez-vous, on a dit que Jekyll fonctionnait sur le principe de séparation du contenu et de la structure. Les layout sont du côté structure de la force ! Ce sont des fichiers HTML qui contiennent la structure des pages de votre site. 
 
-"Donc, j'ai trois pages dans mon site : l'accueil, les articles, à propos, j'aurai trois layouts ?". On pourrait. Mais, avouez-le, ce ne serait pas vraiment DRY tout cela. Dans chaque layout, il y a forcément quelques éléments répétés, à minima le doctype. Il vaut mieux donc créer un layout de base avec tous ces éléments communs :
+"Donc, j'ai trois pages dans mon site : l'accueil, les articles, à propos, j'aurai trois layouts ?". On pourrait. Mais, avouez-le, ce ne serait pas vraiment DRY tout cela. Dans chaque layout, il y a forcément quelques éléments répétés, à minima le doctype. Il vaut mieux créer un layout de base avec tous ces éléments communs :
 
 [![code layout de base]({{ '/assets/images/capture_layoutbase.png' | relative_url }})]({{ '/assets/images/capture_layoutbase.png' | relative_url }}){: .screenshot}
 
@@ -39,6 +39,7 @@ Le layout de base est bien indiqué. Je lance le serveur pour que Jekyll compile
 
 Vous pouvez utiliser des layouts dans les layouts (Inception !). Par exemple, pour notre site Jekyll, nous avons trois layouts :
 - le layout `base` (doctype, scripts, barre de navigation et footer).
+
 - le layout `default`, qui applique le layout base, mais ajoute dans le body une div dans laquelle s'insère le contenu :
 
 [![layout default]({{ '/assets/images/capture_layoutdefault.png' | relative_url }})]({{ '/assets/images/capture_layoutdefault.png' | relative_url }}){: .screenshot}
