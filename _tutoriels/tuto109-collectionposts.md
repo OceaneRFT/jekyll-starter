@@ -11,7 +11,7 @@ part: 1
 # La collection _posts
 Jekyll est orienté vers le blogging. Il utilise donc une collection (un dossier) prédéfinie pour gérer des pages de posts : c'est la collection ... `_posts` ! 
 
-Mais si, souvenez-vous, on vous a même fait créer un dossier qui porte le même nom au [début du tutoriel]({{ '/tutoriels/tuto102-dossiers.html' | relative_url }}){:target="_blank"} ! 
+Mais si, souvenez-vous, on vous a même fait créer un dossier qui porte le même nom au [début du tutoriel]({{ '/tutoriels/tuto102-dossiers.html' | relative_url }}) ! 
 
 Vous l'avez peut-être remarqué, mais notre site Jekyll n'est pas vraiment un blog qui utilise des posts. Pour vous expliquer ce qu'est la collection `_posts`, nous allons donc prendre en exemple le [très bon site réalisé par nos collègues](AJOUTER LIEN). 
 
@@ -21,13 +21,13 @@ Pour que les fichiers dans votre dossier `_posts` soient correctement compilés 
 
 Voici un exemple de nom de fichier :
 
-[![arborescence fichier _posts]({{ '/assets/images/capture_fichierposts.png' | relative_url }})]({{ '/assets/images/capture_fichierposts.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![arborescence fichier _posts]({{ '/assets/images/capture_fichierposts.png' | relative_url }})]({{ '/assets/images/capture_fichierposts.png' | relative_url }}){: .screenshot}
 
 Tous vos fichiers doivent également commencer par du Front Matter (ne serait-ce que pour indiquer le layout que vous souhaitez appliquer). 
 
 Prenons comme exemple cette page de site :
 
-[![code d'un post]({{ '/assets/images/capture_article.png' | relative_url }})]({{ '/assets/images/capture_article.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![code d'un post]({{ '/assets/images/capture_article.png' | relative_url }})]({{ '/assets/images/capture_article.png' | relative_url }}){: .screenshot}
 
 Vous pouvez ajouter des **tags** et des **catégories** pour référencer vos articles de blogs (attention, on ne parle pas de tags Liquid ici hein !).
 
@@ -39,7 +39,7 @@ Les tags sont définis dans le Front Matter de vos fichiers de contenu. Il y a d
 
 - Vous pouvez utiliser  la clé `tags` au pluriel. Tout ce que vous écrivez et séparez par un espace sera alors considéré comme **plusieurs entrées**. C'est la méthode qui a été utilisée pour la page que nous avons vue plus haut :
 
-[![Front matter avec les tags]({{ '/assets/images/capture_tags.png' | relative_url }})]({{ '/assets/images/capture_tags.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![Front matter avec les tags]({{ '/assets/images/capture_tags.png' | relative_url }})]({{ '/assets/images/capture_tags.png' | relative_url }}){: .screenshot}
 
 Cette page a donc 2 tags : "html" et "débutant".
 
@@ -48,12 +48,12 @@ Maintenant, imaginons que vous souhaitiez avoir une page qui recense tous vos ta
 
 Commencez par créer une page `tags.html` à la racine de votre dossier (nous avons choisi le nom `tags` pour l'exemple, mais vous pouvez appeler cette page comme vous voulez).
 
-[![Arborescence avec la page tags.html]({{ '/assets/images/capture_pagetags.png' | relative_url }})]({{ '/assets/images/capture_pagetags.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![Arborescence avec la page tags.html]({{ '/assets/images/capture_pagetags.png' | relative_url }})]({{ '/assets/images/capture_pagetags.png' | relative_url }}){: .screenshot}
 
 N'oubliez pas d'indiquer dans le Front Matter le layout que vous souhaitez utiliser sur cette page. Dans notre exemple, nous utiliserons le layout `default`.
 Nous créons ensuite une boucle qui permettra d'afficher tous les tags et tous les articles s'y référant :
 
-[![Boucle pour créer les tags]({{ '/assets/images/capture_boucletags.png' | relative_url }})]({{ '/assets/images/capture_boucletags.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![Boucle pour créer les tags]({{ '/assets/images/capture_boucletags.png' | relative_url }})]({{ '/assets/images/capture_boucletags.png' | relative_url }}){: .screenshot}
 
 La première ligne indique que la boucle va s'appliquer pour chaque **tag**. 
 La deuxième indique que, pour chaque tag, nous allons créer un titre `<h3>` ainsi qu'une liste `<ul>`. Dans cette ligne, `tag[0]` nous permettra d'afficher le nom de chaque tags.
@@ -64,7 +64,7 @@ Ensuite, on demande simplement de créer un lien vers l'url du post, avec le tit
 
 Une fois compilée par Jekyll et mis en ligne, ça donne ça :
 
-[![Capture d'écran de la page tags du site]({{ '/assets/images/capture_sitetags.png' | relative_url }})]({{ '/assets/images/capture_sitetags.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![Capture d'écran de la page tags du site]({{ '/assets/images/capture_sitetags.png' | relative_url }})]({{ '/assets/images/capture_sitetags.png' | relative_url }}){: .screenshot}
 
 Alors, c'était pas si dur, non ? Et ce qui est bien, c'est que, grâce à cette boucle, chaque nouveau tag sera automatiquement ajouté à cette page, pendant que vous êtes tranquillement en train de boire un mojito en terrasse. 
 
@@ -74,7 +74,7 @@ Comme les tags, les catégories permettent de référencer vos articles. La diff
 Comme pour les tags :
 - Les catégories sont également renseignées dans le Front Matter :
 
-[![code d'un post, catégorie encadrée dans le front matter]({{ '/assets/images/capture_frontmatter-categorie.png' | relative_url }})]({{ '/assets/images/capture_fontmatter-categorie.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![code d'un post, catégorie encadrée dans le front matter]({{ '/assets/images/capture_frontmatter-categorie.png' | relative_url }})]({{ '/assets/images/capture_fontmatter-categorie.png' | relative_url }}){: .screenshot}
 
 - Jekyll enregistre toutes les catégories que vous créez dans `site.categories`.
 

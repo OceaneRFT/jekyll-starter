@@ -9,13 +9,13 @@ Les posts de blog, c'est bien, mais parfois on a besoin d'utiliser des collectio
 
 Pour cela, commencez par créer un dossier dans votre dossier racine : `_nom-collection`. Dans ce site, nous avons ainsi créé une collection `_tutoriels` pour stocker les fichiers markdown de nos pages tutoriels.
 
-[![arborescence avec le dossier _tutoriels ouvert]({{ '/assets/images/capture_collectuto.png' | relative_url }})]({{ '/assets/images/capture_collectuto.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![arborescence avec le dossier _tutoriels ouvert]({{ '/assets/images/capture_collectuto.png' | relative_url }})]({{ '/assets/images/capture_collectuto.png' | relative_url }}){: .screenshot}
 
 Notez bien l'utilisation du pluriel dans le nom de votre dossier de collection : **_tutoriels**. 
 
 Il faut ensuite indiquer à Jekyll que vous avez créé cette collection. Pour cela, ajouter au fichier `_config.yml` le nom de votre collection. Voici ce que nous avons pour notre site Jeykll :
 
-[![fichier config]({{ '/assets/images/capture_configcollec.png' | relative_url }})]({{ '/assets/images/capture_configcollec.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![fichier config]({{ '/assets/images/capture_configcollec.png' | relative_url }})]({{ '/assets/images/capture_configcollec.png' | relative_url }}){: .screenshot}
 
 `output: true` indique à Jekyll qu'il doit compiler tous les fichiers de cette collection en autant de fichiers HTML.
 **ATTENTION**, quand vous utilisez YAML, respectez bien l'indentation !! Un espace en trop ou en moins, et rien ne va plus !

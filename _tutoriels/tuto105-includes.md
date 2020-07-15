@@ -11,7 +11,7 @@ Les includes nous permettent de retoucher plus facilement notre code (plus besoi
 
 Pour stocker ces bouts de code, utilisez votre placard à includes : le dossier `_includes`. Pour notre site, nous avons les includes suivants :
 
-[![dossier includes]({{ '/assets/images/capture_dossierincludes.png' | relative_url }})]({{ '/assets/images/capture_dossierincludes.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![dossier includes]({{ '/assets/images/capture_dossierincludes.png' | relative_url }})]({{ '/assets/images/capture_dossierincludes.png' | relative_url }}){: .screenshot}
 
 Vous pouvez remarquer qu'en plus de nos fichiers HTML, nous avons deux fichiers svg. Nous avons fait ce choix pour deux raisons :
 - Pour gagner de la place dans nos layouts (les fichiers svg ont tendance à s'étendre sur des lignes... et des lignes... et des lignes... et des lignes... );
@@ -21,7 +21,7 @@ Ok, mais comment je fais pour assembler tout ça moi ? Ou pour dire que je veux 
 
 Et bien, vous vous souvenez de la façon dont on a ajouté du contenu dans nos pages HTML ? C'est un peu le même principe pour les includes. Pour insérer la barre de navigation dans notre layout `base`, nous avons écrit : 
 
-[![insertion include]({{ '/assets/images/capture_include.png' | relative_url }})]({{ '/assets/images/capture_include.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![insertion include]({{ '/assets/images/capture_include.png' | relative_url }})]({{ '/assets/images/capture_include.png' | relative_url }}){: .screenshot}
 
 Quand Jekyll compile nos fichiers, il sait qu'à cet endroit, il doit aller chercher l'include correspondant.
 

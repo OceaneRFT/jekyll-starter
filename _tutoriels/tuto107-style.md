@@ -18,11 +18,11 @@ Dans notre image ci-dessous `style_name`, "style_name" correspond au nom de la v
 "front-matter", afin que Jekyll récupère l'information. Vous pouvez lui attribuer n'importe quel nom, ici elle se nomme `style_name`.
 
 
-[![objects style ]({{ '/assets/images/capture_frontmatter-tuto.png' | relative_url }})]({{ '/assets/images/capture_frontmatter-tuto.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![objects style ]({{ '/assets/images/capture_frontmatter-tuto.png' | relative_url }})]({{ '/assets/images/capture_frontmatter-tuto.png' | relative_url }}){: .screenshot}
 
 Nous passons à la seconde étape ! Retournons à notre fichier `base.html` 
 
-[![objects style]({{ '/assets/images/capture_bouclestyle.png' | relative_url }})]({{ '/assets/images/capture_bouclestyle.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![objects style]({{ '/assets/images/capture_bouclestyle.png' | relative_url }})]({{ '/assets/images/capture_bouclestyle.png' | relative_url }}){: .screenshot}
 
 Une minute, cette longue ligne de code me semble incompréhensible, je n'y arriverai jamais...
 

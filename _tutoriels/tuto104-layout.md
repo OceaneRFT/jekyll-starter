@@ -20,32 +20,31 @@ On remarque plusieurs choses ici :
 
 Et pour que Jekyll sache à quoi corresponde ce mystérieux "relative-url", il faut l'indiquer dans votre fichier `_config.ym` : `baseurl: /nom-repository`. Par exemple, pour créer ce site, nous avons indiqué :
 
-[![fichier config, base url]({{ '/assets/images/capture_configurl.png' | relative_url }})]({{ '/assets/images/capture_configurl.png' | relative_url }}){: .screenshot}{:target="_blank"}
-
+[![fichier config, base url]({{ '/assets/images/capture_configurl.png' | relative_url }})]({{ '/assets/images/capture_configurl.png' | relative_url }}){: .screenshot}
 
 - On remarque une seconde nouveauté :
 
-[![content]({{ '/assets/images/capture_content.png' | relative_url }})]({{ '/assets/images/capture_content.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![content]({{ '/assets/images/capture_content.png' | relative_url }})]({{ '/assets/images/capture_content.png' | relative_url }}){: .screenshot}
 
 Comme son nom l'indique, la balise `content` (contenu en français) permet d'indiquer où vous souhaitez insérer votre contenu dans cette page. Quand Jekyll compilera vos fichiers Markdown dans lesquels le layout de base est indiqué, le contenu prendra la place de cette balise. 
 
 Prenons un exemple. Voici à quoi peut ressembler le contenu de votre index (fichier Markdown, donc) :
 
-[![index]({{ '/assets/images/capture_index.png' | relative_url }})]({{ '/assets/images/capture_index.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![index]({{ '/assets/images/capture_index.png' | relative_url }})]({{ '/assets/images/capture_index.png' | relative_url }}){: .screenshot}
 
 Le layout de base est bien indiqué. Je lance le serveur pour que Jekyll compile ces fichiers. Dans le dossier `_site`, vous trouverez votre index compilé par Jekyll. Il s'est transformé en fichier HTML et a appliqué le layout `base` à votre contenu ! Magie !
 
-[![index compilé]({{ '/assets/images/capture_indexcompile.png' | relative_url }})]({{ '/assets/images/capture_indexcompile.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![index compilé]({{ '/assets/images/capture_indexcompile.png' | relative_url }})]({{ '/assets/images/capture_indexcompile.png' | relative_url }}){: .screenshot}
 
 Vous pouvez utiliser des layouts dans les layouts (Inception !). Par exemple, pour notre site Jekyll, nous avons trois layouts :
 - Le layout `base` (doctype, scripts, barre de navigation et footer).
 
 - Le layout `default`, qui applique le layout base, mais ajoute dans le body une div dans laquelle s'insère le contenu :
 
-[![layout default]({{ '/assets/images/capture_layoutdefault.png' | relative_url }})]({{ '/assets/images/capture_layoutdefault.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![layout default]({{ '/assets/images/capture_layoutdefault.png' | relative_url }})]({{ '/assets/images/capture_layoutdefault.png' | relative_url }}){: .screenshot}
 
 - Le layout `tutoriels`, qui applique le layout base, mais ajoute la div du body et le menu de navigation à droite :
 
-[![layout tutoriels]({{ '/assets/images/capture_layouttuto.png' | relative_url }})]({{ '/assets/images/capture_layouttuto.png' | relative_url }}){: .screenshot}{:target="_blank"}
+[![layout tutoriels]({{ '/assets/images/capture_layouttuto.png' | relative_url }})]({{ '/assets/images/capture_layouttuto.png' | relative_url }}){: .screenshot}
 
 Nous utilisons donc le layout `base` dans nos deux autres fichiers de layout. Dans les pages de notre site, nous utilisons soit le layout `tutoriels` (pour les pages du tutoriel), soit le layout `default` (pour les autres pages.)

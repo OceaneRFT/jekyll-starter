@@ -2,6 +2,8 @@
 layout: default
 title: Ressources
 ---
+# Ressources
+
 Voici les différentes ressources utilisées pour créer ce site :
 
 - [Documentation Jekyll](https://jekyllrb.com/docs/){:target="_blank"} 
