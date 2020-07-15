@@ -1,6 +1,7 @@
 ---
 layout: default 
 title: Jekyll Starter Kit ++
+link: /index.html
 ---
 <!--
 Ne pas oublier le "front-matter" défini par les tirets ci-dessous, cela permet à Jekyll de définir des variables
