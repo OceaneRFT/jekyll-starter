@@ -5,7 +5,7 @@
       {% if last_part != tutoriel.part and last_part != -1 %}
       <span class="separator"></span>
       {% endif %}
-      <a class="step {% if tutoriel.order < page.order %}passed{% endif %} {% if tutoriel.order == page.order %}current{% endif %}" href="{{ tutoriel.url | relative_url}}">
+      <a class="step {% if tutoriel.order < page.order %}passed{% endif %} {% if tutoriel.order == page.order %}current{% endif %}" href="{{ tutoriel.url | relative_url}}" title="{{ tutoriel.title }}">
         {% if tutoriel.order == page.order %}
           <span class="marker"></span>
         {% endif %}
