@@ -3,7 +3,11 @@
 
 .navbar {
     background-color: $theme-color ;
+<<<<<<< HEAD
     padding: 0.65rem 1re;
+=======
+    ;
+>>>>>>> aae07f3fc932335d38afaad692cc6e56f8dc7f99
     & .nav-link {
         @include police;
     }

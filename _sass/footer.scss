@@ -23,12 +23,15 @@
             margin-bottom: 0;
         }
         & .btn{
-        color: white;
+        @include police;
         } 
     }
     
 }
 
+.footer-copyright{
+    @include police ;
+}
 
 
 
