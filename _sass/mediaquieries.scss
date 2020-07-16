@@ -1,6 +1,15 @@
 /* navbar */
 
 @media (max-width: 768px) {
+    
+    .container {
+        & .angle {
+            display: none;
+        }
+    }
+    .beautiful-icon.nav-link-icon {
+        margin: 3px;
+    }
     .navbar .dropdown-menu {
         border: none;
     }
