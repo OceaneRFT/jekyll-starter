@@ -103,9 +103,16 @@
         & .label {
             font-size: 1.2rem;
             @include police;
+            &:hover {
+                font-size: 1.2rem;
+            }
         }
         & .arrow {
+            font-size: 1.2rem;
             @include police;
+            &:hover {
+                font-size: 1.2rem;
+            }
         }
     }
     &-nav-button{

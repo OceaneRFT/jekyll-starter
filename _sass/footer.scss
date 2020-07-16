@@ -1,8 +1,8 @@
 
 .page-footer {
-    & .row {
+    & .row-footer {
         margin-top: 15px;
-       & .logodwwm {
+        & .logodwwm {
         width: 150px;
         height: auto;
         box-shadow: unset;
@@ -11,16 +11,13 @@
         width: 50px;
         }
         & .col-footer {
-            display: flex;
-            justify-content: center;
-        }
-        & .col-footer {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 15px;
-        }
-        & .col-footer:last-child {
-            margin-bottom: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
         & .btn {
         @include police;

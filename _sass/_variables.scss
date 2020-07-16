@@ -13,13 +13,13 @@ $theme-color: $color-grey; //La couleur du thème avec laquelle on travaille tou
         $theme-color: lighten($theme-color, 90%);
         color: $theme-color;
         }
-@content;
+    @content;
 }
 // Cette mixin sert à changer la couleur du corps de page en fonction de la luminosité de notre background.
-@mixin theme{
-        $theme-color: lighten($theme-color,15%);
-        background-color: $theme-color;
-@content;
+@mixin theme {
+    $theme-color: lighten($theme-color, 15%);
+    background-color: $theme-color;
+    @content;
 }
 
 // Cette mixin sert à changer la couleur du marker de la barre de progression en fonction de la luminosité de notre background.
@@ -31,7 +31,7 @@ $theme-color: $color-grey; //La couleur du thème avec laquelle on travaille tou
         $theme-color: lighten($theme-color, 90%);
         border-bottom-color: $theme-color;
         }
-@content;
+    @content;
 }
 
 
@@ -44,5 +44,5 @@ $theme-color: $color-grey; //La couleur du thème avec laquelle on travaille tou
         $theme-color: lighten($theme-color, 90%);
         fill: $theme-color;
         }
-@content;
+    @content;
 }
