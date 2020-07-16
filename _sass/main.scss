@@ -4,6 +4,9 @@
 body {
     margin: 0;
     padding: 0;
+
+    --bg-color: #{$theme-color};
+    --main-bg-color: #{lighten($theme-color,15%)};
 }
 
 /* End reset css */
@@ -14,7 +17,7 @@ body {
 // Style de l'ensemble du site
 .container {
     height: 100%;
-    background-color: $theme-color;
+    background-color: var(--bg-color);
 
     & .row-page {
         margin: 0;
@@ -96,7 +99,7 @@ svg{
     @include svg ;
 }
 
-a{
+ a{
     @include police;
     
     &:hover{

@@ -1,26 +1,24 @@
 ---
 layout: base
 style_name: tutoriels
+is_tuto: true
 ---
 <!-- 
     Comme "default.html" elle s'insérera dans le layout de base, nous souhaitons lui donner un CSS différent, c'est pour cela que nous lui 
     donnons dans cette variable que nous avons prédéfini sur la page "base.html"   
 -->
 <div class="col-12">
-{% include progress.html %}
+    {% include progress.html %}
 </div>
 <div class="col-12 col-page">
-    
     {{ content }}
-
-
 </div>
 <div class="col-12 ">
-{% include previous-next.html %}
+    {% include previous-next.html %}
 </div>
 <!-- Nous utilisons la même boucle que dans "navigation.html" afin de génerer la liste des liens automatiquement -->
 <div class="nav-right">
     {% for tutoriel in site.tutoriels %}
-    <a  class="nav_right-link" href="{{ tutoriel.url | relative_url }}"{% if tutoriel.url == page.url %}style="font-weight: bold;"{% endif %}>{{ tutoriel.title }}</a>
+        <a  class="nav_right-link {% if tutoriel.url == page.url %}active{% endif %}" href="{{ tutoriel.url | relative_url }}">{{ tutoriel.title }}</a>
     {% endfor %}
 </div>
