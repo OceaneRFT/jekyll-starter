@@ -18,8 +18,12 @@
     -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
-                      <!-- Un commentaire soon  -->
+    <!-- Un commentaire soon  -->
     <link rel="icon" type="image/png" href="{{'assets/images/logo1.svg'| relative_url }}" />
+
+    <!-- police roboto -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- 
         Afin de créer un CSS par page si vous voulez appliquer un style différent nous devons donner à Jekyll un lien qui lui
@@ -30,24 +34,27 @@
     {% endif %}
     <!-- Cela permet d'afficher le titre de chaque page( renseigné dans la variable "title" du front-matter de chaque page). -->
     <title>{{ page.title }}</title>
-    
+
 </head>
 
 <body>
-        <!-- 
+    <!-- 
         Ici nous n'oublions pas de dire au logiciel d'inclure la navigation et le contenu 
         -->
     {% include navigation.html %}
     <div class="container">
+        <div class="angle angle-right"></div>
+        <div class="angle angle-left"></div>
+
         <div class="row row-page">
             {{ content }}
         </div>
-        
+
         {% include footer.html %}
     </div>
 
-    
-    
+
+
     <!-- script bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -60,7 +67,14 @@
         crossorigin="anonymous"></script>
     <!-- Fin boot -->
 
-    
+    <!-- Script pour le Lightbox des screenshot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet"/>
+    <script>
+        $(document).on('click', '[class="screenshot"]', function (e) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
 </body>
-
 </html>

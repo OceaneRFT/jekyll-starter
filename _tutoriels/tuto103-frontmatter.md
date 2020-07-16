@@ -10,7 +10,7 @@ Le Front Matter (matière en avant), doit, comme son nom l'indique, apparaître 
 [![front matter vide]({{ '/assets/images/capture_frontmattervide.png' | relative_url }})]({{ '/assets/images/capture_frontmattervide.png' | relative_url }}){: .screenshot}
 
 Le Front Matter permet à Jekyll :
-- de savoir quels fichiers il doit compiler
+- de savoir quels fichiers il doit compiler;
 - de stocker des variables prédéfinies.
 
 Par exemple, pour cette page, nous avons le Front Matter suivant :
@@ -18,7 +18,7 @@ Par exemple, pour cette page, nous avons le Front Matter suivant :
 [![front matter de la page]({{ '/assets/images/capture_frontmatter.png' | relative_url }})]({{ '/assets/images/capture_frontmatter.png' | relative_url }}){: .screenshot}
 
 Ce Front Matter contient deux informations (ou variables) que nous avons définies pour les besoins du site :
-- le layout (on en parle juste après)
+- le layout (on en parle juste après);
 - le titre que nous souhaitons donner à la page.
 
 On ne dirait pas comme ça, mais le Front Matter n'est pas écrit en Markdown, il est écrit en YAML. C'est un langage utilisé pour écrire les fichiers qui concerne les données (le fichier `_config.yml` et les fichiers contenus dans notre dossier `_data`).

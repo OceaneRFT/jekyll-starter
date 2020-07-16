@@ -18,6 +18,6 @@ Il faut ensuite indiquer à Jekyll que vous avez créé cette collection. Pour c
 [![fichier config]({{ '/assets/images/capture_configcollec.png' | relative_url }})]({{ '/assets/images/capture_configcollec.png' | relative_url }}){: .screenshot}
 
 `output: true` indique à Jekyll qu'il doit compiler tous les fichiers de cette collection en autant de fichiers HTML.
-**ATTENTION**, quand vous utilisez YAML, faites bien attention à l'indentation !! Un espace en trop ou en moins, et rien ne va plus !
+**ATTENTION**, quand vous utilisez YAML, respectez bien l'indentation !! Un espace en trop ou en moins, et rien ne va plus !
 
 **ATTENTION (encore)**, quand vous modifiez un fichier config, il vaut mieux stopper et relancer Jekyll pour voir si vos modifications ont été compilées correctement.

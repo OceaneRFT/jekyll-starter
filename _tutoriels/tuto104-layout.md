@@ -22,7 +22,6 @@ Et pour que Jekyll sache à quoi corresponde ce mystérieux "relative-url", il f
 
 [![fichier config, base url]({{ '/assets/images/capture_configurl.png' | relative_url }})]({{ '/assets/images/capture_configurl.png' | relative_url }}){: .screenshot}
 
-
 - On remarque une seconde nouveauté :
 
 [![content]({{ '/assets/images/capture_content.png' | relative_url }})]({{ '/assets/images/capture_content.png' | relative_url }}){: .screenshot}
@@ -38,13 +37,13 @@ Le layout de base est bien indiqué. Je lance le serveur pour que Jekyll compile
 [![index compilé]({{ '/assets/images/capture_indexcompile.png' | relative_url }})]({{ '/assets/images/capture_indexcompile.png' | relative_url }}){: .screenshot}
 
 Vous pouvez utiliser des layouts dans les layouts (Inception !). Par exemple, pour notre site Jekyll, nous avons trois layouts :
-- le layout `base` (doctype, scripts, barre de navigation et footer).
+- Le layout `base` (doctype, scripts, barre de navigation et footer).
 
-- le layout `default`, qui applique le layout base, mais ajoute dans le body une div dans laquelle s'insère le contenu :
+- Le layout `default`, qui applique le layout base, mais ajoute dans le body une div dans laquelle s'insère le contenu :
 
 [![layout default]({{ '/assets/images/capture_layoutdefault.png' | relative_url }})]({{ '/assets/images/capture_layoutdefault.png' | relative_url }}){: .screenshot}
 
-- le layout `tutoriels`, qui applique le layout base, mais ajoute la div du body et le menu de navigation à droite :
+- Le layout `tutoriels`, qui applique le layout base, mais ajoute la div du body et le menu de navigation à droite :
 
 [![layout tutoriels]({{ '/assets/images/capture_layouttuto.png' | relative_url }})]({{ '/assets/images/capture_layouttuto.png' | relative_url }}){: .screenshot}
 

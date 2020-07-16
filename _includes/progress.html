@@ -1,11 +1,11 @@
-<section class="progress">
+<section class="progress" id="progress-bar">
   {% assign tutoriels = site.tutoriels | sort: "order" %}
   {% assign last_part = -1 %}
   {% for tutoriel in tutoriels %}
     {% if last_part != tutoriel.part and last_part != -1 %}
     <span class="separator"></span>
     {% endif %}
-    <a class="step {% if tutoriel.order < page.order %}passed{% endif %} {% if tutoriel.order == page.order %}current{% endif %}" href="{{ tutoriel.url | relative_url}}" title="{{ tutoriel.title }}">
+    <a class="step {% if tutoriel.order == page.order %}current{% endif %}" href="{{ tutoriel.url | relative_url }}" title="{{ tutoriel.title }}" data-order="{{ tutoriel.order }}">
       {% if tutoriel.order == page.order %}
         <span class="marker"></span>
       {% endif %}

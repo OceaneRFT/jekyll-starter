@@ -11,7 +11,7 @@ part: 1
 # La collection _posts
 Jekyll est orienté vers le blogging. Il utilise donc une collection (un dossier) prédéfinie pour gérer des pages de posts : c'est la collection ... `_posts` ! 
 
-Mais si, souvenez-vous, on vous a même fait créer un dossier qui porte le même nom au [début du tutoriel]({{ '/tutoriels/tuto102-dossiers.html' | relative_url }}){:target="_blank"} ! 
+Mais si, souvenez-vous, on vous a même fait créer un dossier qui porte le même nom au [début du tutoriel]({{ '/tutoriels/tuto102-dossiers.html' | relative_url }}) ! 
 
 Vous l'avez peut-être remarqué, mais notre site Jekyll n'est pas vraiment un blog qui utilise des posts. Pour vous expliquer ce qu'est la collection `_posts`, nous allons donc prendre en exemple le [très bon site réalisé par nos collègues](AJOUTER LIEN). 
 
@@ -34,8 +34,8 @@ Vous pouvez ajouter des **tags** et des **catégories** pour référencer vos ar
 ## Les tags
 
 Les tags sont des mots-clés que vous pouvez associer à vos articles. Un article peut donc avoir plusieurs tags. 
-Les tags sont définies dans le Front Matter de vos fichiers de contenu. Il y a deux façons de les indiquer :
-- Vous pouvez utiliser la clé `tag`  au singulier. Tout ce que vous écrivez comme sera considéré comme **une seule entrée**. Par exemple,si nous écrivons `tag: débutant html`, le tag créé sera "débutant html". 
+Les tags sont définis dans le Front Matter de vos fichiers de contenu. Il y a deux façons de les indiquer :
+- Vous pouvez utiliser la clé `tag`  au singulier. Tout ce que vous écrivez sera considéré comme **une seule entrée**. Par exemple,si nous écrivons `tag: débutant html`, le tag créé sera "débutant html". 
 
 - Vous pouvez utiliser  la clé `tags` au pluriel. Tout ce que vous écrivez et séparez par un espace sera alors considéré comme **plusieurs entrées**. C'est la méthode qui a été utilisée pour la page que nous avons vue plus haut :
 

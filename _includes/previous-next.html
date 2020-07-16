@@ -8,7 +8,7 @@
   {% assign prev_title = prev[0].title %}
 {% else %}
   {% assign prev_url = 'index.html' %}
-  {% assign prev_title = Accueil %}
+  {% assign prev_title = 'Accueil' %}
 {% endif %}
 
 {% if nextIdx <= site.tutoriels.size %}
@@ -26,6 +26,9 @@
     <a class="content-nav-button" href="{{ prev_url | relative_url }}">
       <span class="arrow">&lt;</span>
       <span class="label">{{ prev_title }}</span>
+    </a>
+    <a class="content-nav-nav-button" href="{{ next_url | relative_url }}" id="validator" onclick="validate()">
+      <span class="label">Fingers in the nose, next step!</span>
     </a>
     <a class="content-nav-button" href="{{ next_url | relative_url }}">
         <span class="label">{{ next_title }}</span>

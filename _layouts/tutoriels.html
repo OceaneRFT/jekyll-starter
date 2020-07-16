@@ -19,6 +19,9 @@ is_tuto: true
 <!-- Nous utilisons la même boucle que dans "navigation.html" afin de génerer la liste des liens automatiquement -->
 <div class="nav-right">
     {% for tutoriel in site.tutoriels %}
-        <a  class="nav_right-link {% if tutoriel.url == page.url %}active{% endif %}" href="{{ tutoriel.url | relative_url }}">{{ tutoriel.title }}</a>
+    <a  class="nav_right-link {% if tutoriel.url == page.url %}active{% endif %}" href="{{ tutoriel.url | relative_url }}"title="{{ tutoriel.title }}">{{ tutoriel.title }}</a>
     {% endfor %}
 </div>
+
+ <!-- Script pour la progress  -->
+ <script src="{{ '/assets/js/progress.js' | relative_url }}"></script>

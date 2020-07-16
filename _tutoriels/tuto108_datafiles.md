@@ -14,7 +14,7 @@ Dans ce fichier `navigation.yml`, nous renseignons le nom de la page et son lien
 
 [![fichier navigation]({{ '/assets/images/capture_navigationyml.png' | relative_url }})]({{ '/assets/images/capture_navigationyml.png' | relative_url }}){: .screenshot}
 
-Un groupe données relatif à une page s'appelle un **item**. Si on demande l'affichage du nom de la page, on peut ainsi écrire :
+Un groupe de données relatif à une page s'appelle un **item**. Si on demande l'affichage du nom de la page, on peut ainsi écrire :
 
 [![expression item.name]({{ '/assets/images/capture_item.png' | relative_url }})]({{ '/assets/images/capture_item.png' | relative_url }}){: .screenshot}
 
@@ -39,7 +39,7 @@ Pour chacun de ces items, il doit effectuer les procédures indiquées dans notr
 
 [![code de la boucle qui génère les onglets dans la barre de navigation]({{ '/assets/images/capture_navigationli.png' | relative_url }})]({{ '/assets/images/capture_navigationli.png' | relative_url }}){: .screenshot}
 
-Ici, on indique à Jekyll qu'on souhaite créer un élément (`<li>`) (chaque `<li>` correspond à un onglet). Dans cet élément, on veut insérer le lien de nos pages, on utilise donc`item.link` (sans oublier de préciser qu'on veut l'url relative, bien sûr). On veut également que chaque onglet affiche le nom de la page, on précise donc `item.name` comme contenu à afficher.
+Ici, on indique à Jekyll qu'on souhaite créer un élément `<li>` (chaque `<li>` correspond à un onglet). Dans cet élément, on veut insérer le lien de nos pages, on utilise donc `item.link` (sans oublier de préciser qu'on veut l'url relative, bien sûr). On veut également que chaque onglet affiche le nom de la page, on précise donc `item.name` comme contenu à afficher.
 
 Dans notre boucle, on a ajouté une condition avec *IF* :
 

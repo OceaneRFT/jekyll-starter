@@ -5,11 +5,11 @@ title: Les includes
 part: 1
 ---
 # Les includes
-Le but de Jekyll, souvenez-vous, c'est de séparer le maximum de responsabilités dans votre code. Il sépare donc le contenu de la structure, mais, au sein de la structure, on peut encore faire des séparations, et avoir un fichier HTML pour la structure du footer, un autre pour la structure de la barre de navigation, etc. C'est un peu comme une recette : pour réaliser une pâte à crêpes, vous avez besoin d'oeufs, de farine, de bières (si si, c'est meilleur) et de lait. Chaque ingrédient correspond à un include : vous les ajouter au besoin pour réaliser votre recette. 
+Le but de Jekyll, souvenez-vous, c'est de séparer le maximum de responsabilités dans votre code. Il sépare donc le contenu de la structure, mais, au sein de la structure, on peut encore faire des séparations, et avoir un fichier HTML pour la structure du footer, un autre pour la structure de la barre de navigation, etc. C'est un peu comme une recette : pour réaliser une pâte à crêpes, vous avez besoin d'oeufs, de farine, de bières (si si, c'est meilleur) et de lait. Chaque ingrédient correspond à un include : vous les ajoutez au besoin pour réaliser votre recette. 
 
 Les includes nous permettent de retoucher plus facilement notre code (plus besoin de scroller pendant des heures pour retrouver quelques lignes de codes bien précises !). De la même façon, si je veux changer de farine dans ma recette, je vais aller directement voir mon pot de farine dans mon placard (essayez de retrouvez votre farine mélangée dans votre pâte sinon !).
 
-Pour stocker ces bouts de code, utilisez votre placard à includes ! Le dossier `_includes`. Pour notre site, nous avons les includes suivants :
+Pour stocker ces bouts de code, utilisez votre placard à includes : le dossier `_includes`. Pour notre site, nous avons les includes suivants :
 
 [![dossier includes]({{ '/assets/images/capture_dossierincludes.png' | relative_url }})]({{ '/assets/images/capture_dossierincludes.png' | relative_url }}){: .screenshot}
 
@@ -25,4 +25,4 @@ Et bien, vous vous souvenez de la façon dont on a ajouté du contenu dans nos p
 
 Quand Jekyll compile nos fichiers, il sait qu'à cet endroit, il doit aller chercher l'include correspondant.
 
-Arrêtons-nous d'ailleurs un instant sur ces commandes avec des accolades et des pourcentages et tout le tralala. Pour faire toutes ces insertions, vous utilisez un autre langage, qui s'appelle [Liquid](https://shopify.github.io/liquid/basics/introduction/){:target="_blank"} (et oui, c'est la magie de Jekyll, on utilise tout un tas de langage sans même s'en apercevoir !). Pour en savoir plus, passez à l'étape suivante !
+Arrêtons-nous d'ailleurs un instant sur ces commandes avec des accolades et des pourcentages et tout le tralala. Pour faire toutes ces insertions, vous utilisez un autre langage, qui s'appelle [Liquid](https://shopify.github.io/liquid/basics/introduction/){:target="_blank"} (et oui, c'est la magie de Jekyll, on utilise tout un tas de langages sans même s'en apercevoir !). Pour en savoir plus, passez à l'étape suivante !
