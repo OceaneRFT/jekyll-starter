@@ -3,6 +3,12 @@
 @media (max-width: 768px) {
     
     .container {
+        & .nav-right {
+            position: unset;
+            border-radius: 30px;
+            margin: 0;
+        }
+
         & .angle {
             display: none;
         }
@@ -21,6 +27,7 @@
 @media screen and (min-width: 1591px) {
     .container {
         max-width: 900px;
+
         & .nav-right {
             margin-left: 900px;
         }
@@ -31,6 +38,7 @@
 @media screen and (min-width: 1401px) and (max-width: 1590px) {
     .container {
         max-width: 800px;
+
         & .nav-right {
         margin-left: 800px;
         }
@@ -40,7 +48,9 @@
 @media screen and (min-width: 501px) and (max-width: 1400px) {
     .container {
         & .nav-right {
-            display: none;
+            position: unset;
+            border-radius: 30px;
+            margin: 0;
         }
         & .angle {
             display: none;
@@ -60,9 +70,11 @@
 @media screen and (max-width: 768px) {
     .content-footer {
         & .content-nav-button {
+
             & .label {
                 display: none;
             }
+
             & .arrow {
                 font-size: 50px;
                 @include police;

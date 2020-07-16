@@ -7,20 +7,21 @@ style_name: tutoriels
     donnons dans cette variable que nous avons prédéfini sur la page "base.html"   
 -->
 <div class="col-12">
-{% include progress.html %}
+    {% include progress.html %}
 </div>
 <div class="col-12 col-page">
-    
+
     {{ content }}
 
 
 </div>
 <div class="col-12 ">
-{% include previous-next.html %}
+    {% include previous-next.html %}
 </div>
 <!-- Nous utilisons la même boucle que dans "navigation.html" afin de génerer la liste des liens automatiquement -->
-<div class="nav-right">
+<div class="col-12 nav-right">
     {% for tutoriel in site.tutoriels %}
-    <a  class="nav_right-link {% if tutoriel.url == page.url %}active{% endif %}" href="{{ tutoriel.url | relative_url }}"title="{{ tutoriel.title }}">{{ tutoriel.title }}</a>
+    <a class="nav_right-link {% if tutoriel.url == page.url %}active{% endif %}"
+        href="{{ tutoriel.url | relative_url }}" title="{{ tutoriel.title }}">{{ tutoriel.title }}</a>
     {% endfor %}
 </div>
