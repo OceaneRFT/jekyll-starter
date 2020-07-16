@@ -1,12 +1,16 @@
+// Nous permet de cibler la progress-bar
 var $progressBar = document.getElementById('progress-bar');
+// Nous permet de cibler 
 var $current = $progressBar.querySelector('.current');
 var current = $current.getAttribute('data-order');
 
 var progression = {
-    1: false, 
-    5: false,
-    7: false,
 };
+var storedItem = localStorage.getItem('course::progression');
+
+if (storedItem != null){
+    progression = JSON.parse(storedItem);
+}
 
 var entries = Object.entries(progression);
 
@@ -19,12 +23,8 @@ for (var entry of entries){
 };
 
  function validate() {
-    localStorage.setItem($progressItem, JSON.stringify(entry[1]));
+    progression[current] = true;
+    localStorage.setItem("course::progression", JSON.stringify(progression));
 };
-console.log(validate());
-// localStorage.setItem('course::progression', JSON.stringify(progression));
 
-// var storedItem = localStorage.getItem('course::progression');
-// console.log(storedItem);
-// var storedProgression = JSON.parse(storedItem);
-// console.log(storedProgression);
+
