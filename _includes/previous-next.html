@@ -3,32 +3,47 @@
 
 
 {% if prevIdx > 0 %}
-  {% assign prev = site.tutoriels | where_exp: "item","item.order == prevIdx" %}
-  {% assign prev_url = prev[0].url %}
-  {% assign prev_title = prev[0].title %}
+{% assign prev = site.tutoriels | where_exp: "item","item.order == prevIdx" %}
+{% assign prev_url = prev[0].url %}
+{% assign prev_title = prev[0].title %}
 {% else %}
-  {% assign prev_url = 'index.html' %}
-  {% assign prev_title = 'Accueil' %}
+{% assign prev_url = 'index.html' %}
+{% assign prev_title = 'Accueil' %}
 {% endif %}
 
 {% if nextIdx <= site.tutoriels.size %}
-  {% assign next = site.tutoriels | where_exp: "item","item.order == nextIdx" %}
-  {% assign next_url = next[0].url %}
-  {% assign next_title = next[0].title %}
+{% assign next = site.tutoriels | where_exp: "item","item.order == nextIdx" %}
+{% assign next_url = next[0].url %}
+{% assign next_title = next[0].title %}
 {% else %}
-  {% assign next_url = 'gg.html' %}
-  {% assign next_title = "Next" %}
+{% assign next_url = 'gg.html' %}
+{% assign next_title = "Next" %}
 {% endif %}
 
-
-
 <div class="content-footer">
-    <a class="content-nav-button" href="{{ prev_url | relative_url }}">
-      <span class="arrow">&lt;</span>
-      <span class="label">{{ prev_title }}</span>
-    </a>
-    <a class="content-nav-button" href="{{ next_url | relative_url }}">
-        <span class="label">{{ next_title }}</span>
-        <span class="arrow">&gt;</span>
-      </a>
+  <div class="container">
+    <div class="row row-button">
+      <div class=" col-2 col-md-3 previous btn-nav">
+        <a class="content-nav-button" href="{{ prev_url | relative_url }}">
+          <span class="arrow">&lt;</span>
+          <span class="label">Précédent</span>
+        </a>
+      </div>
+      <div class="col-8 col-md-5 validate btn-nav">
+        <a class="content-nav-nav-button" href="{{ next_url | relative_url }}" id="validator"
+          onclick="validate()">
+          <span class="label">Got it, next step!</span>
+        </a>
+      </div>
+      <div class="col-2 col-md-3 next btn-nav">
+        <a class="content-nav-button" href="{{ next_url | relative_url }}">
+          <span class="label">Suivant</span>
+          <span class="arrow">&gt;</span>
+        </a>
+      </div>
+    </div>
   </div>
+
+
+
+</div>

@@ -4,8 +4,14 @@
 body {
     margin: 0;
     padding: 0;
+
+    --bg-color: #{$theme-color};
+    --main-bg-color: #{lighten($theme-color,15%)};
     font-family: 'Roboto', 'Helvetica', sans-serif;
     line-height: 27px;
+    & .row {
+        margin: 0;
+    }
 }
 
 /* End reset css */
@@ -29,6 +35,8 @@ a{
 
 .container {
     height: 100%;
+    background-color: var(--bg-color);
+
     background-color: $theme-color;
     position: relative;
     & li {

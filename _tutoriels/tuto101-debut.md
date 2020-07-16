@@ -17,7 +17,7 @@ Ouvrez le terminal (astuce : raccourci sur VSCode pour ouvrir le terminal : `ctr
 
 Dans le terminal : tapez la commande `bundle init`.
 
-[![ligne de commande bundle init]({{ '/assets/images/capture_bundle.png' | relative_url }})]({{ '/assets/images/capture_bundle.png' | relative_url }}){: .screenshot}
+[![ligne de commande bundle init]({{ '/assets/images/capture_bundle.png' | relative_url }})]({{ '/assets/images/capture_bundle.png' | relative_url }}){: .screenshot .img-fluid}
 
 Éditez le nouveau fichier `Gemfile` apparu à la racine de votre dossier : ajoutez `Gem "Jekyll"`.
 

@@ -65,13 +65,11 @@
         box-shadow: none;
         & .nav_right-link {
             @include police ;
-            
             &:hover {
                 text-decoration: underline;
             }
         }
     }
-    
     & .active {
         font-weight: bold;
         &:before {
@@ -88,9 +86,10 @@
         left: 50%;
         position: relative;
     }
+    & .prev-next {
+        margin-bottom: 8px;
+    }
 }
-    
-
 
 .content {
     &-footer{
@@ -99,7 +98,33 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 15px 15px 15px;
-
+        & .row-button{
+            display: flex;
+            justify-content: space-between;
+        }
+        & .previous {
+            text-align: left;
+            @include bouton-content-footer;
+            &:hover{
+                @include btn-hover
+            }
+        }
+        & .validate{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include bouton-content-footer;
+            &:hover{
+                @include btn-hover
+            }
+        }
+        & .next {
+            text-align: right;
+            @include bouton-content-footer;
+            &:hover{
+                @include btn-hover
+            }
+        }
         & .label {
             font-size: 1.2rem;
             @include police;
