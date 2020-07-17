@@ -1,14 +1,13 @@
 /* Reset Css */
 
-
 body {
     margin: 0;
     padding: 0;
-
     --bg-color: #{$theme-color};
     --main-bg-color: #{lighten($theme-color,15%)};
     font-family: 'Roboto', 'Helvetica', sans-serif;
     line-height: 27px;
+
     & .row {
         margin: 0;
     }
@@ -16,18 +15,16 @@ body {
 
 /* End reset css */
 
-
-
-
 // Style de l'ensemble du site
-svg{
+
+svg {
     @include svg ;
 }
 
-a{
+a {
     @include police;
     
-    &:hover{
+    &:hover {
         @include police;
         font-size: 1.2rem;
     }
@@ -36,35 +33,33 @@ a{
 .container {
     height: 100%;
     background-color: var(--bg-color);
-
-    background-color: $theme-color;
+    //background-color: $theme-color;
     position: relative;
-    & li {
-        list-style-type: none;
-    }
+
     & .row-page {
         margin: 0;
 
         & .col-page {
-            min-height: calc(100vh - 90px - 214px);
+            min-height: calc(100vh - 90px - 182px);
             margin-top: 15px;
             margin-bottom: 15px;
             padding: 15px 15px 0 15px;
-            @include theme;
             border-radius: 30px;
+            @include theme;
             @include police;
 
             & code {
                 display: inline-block;
                 font-size: 100%;
-                @include police;
                 word-wrap: break-word;
                 margin-right: 2px;
                 padding: 5px;
                 border: 1px solid rgba(0, 0, 0, 0.30);
                 border-radius: 5px;
                 background-color: rgba(153, 153, 153, 0.20);
+                @include police;
             }
+
             & .screenshot {
                 display: block;
                 text-align: center;
@@ -75,6 +70,7 @@ a{
                     box-shadow: 5px 5px 6px -3px black;
                 }
             }
+
             & a {
                 text-decoration: underline;
 
@@ -82,36 +78,29 @@ a{
                     font-size: unset;
                 }
             }
+
             &:last-child {
                 margin-bottom: 0;
-            }
-            h1#welcome-to-jekyll-starter-{
-                text-align: center;
-                padding-bottom: 15px;
             }
         }
     }
 }
 
-
-
-.end{
+.end {
     text-align: center;
     margin: 15px 0px;
 
-    &-link{
+    &-link {
         text-decoration: underline;
         cursor: pointer;
         display: block;
         text-transform: uppercase;
 
-        &:hover{
+        &:hover {
             color: $theme-color;
         }
     }
 }
-
-
 
 .angle {
     position: absolute;
@@ -127,13 +116,15 @@ a{
             border-top-right-radius: 42px;
             }
     }
-    &-right{
+
+    &-right {
         right: -50px;
 
         &:before {
         border-top-left-radius: 42px;
         }
     }
+
     &:before {
         content: "";
         width: 100%;
@@ -142,3 +133,8 @@ a{
         background-color: white;
     }
 }
+
+h1#welcome-to-jekyll-starter- {
+                text-align: center;
+                padding-bottom: 15px;
+            }

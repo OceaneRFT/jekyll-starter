@@ -2,19 +2,19 @@
 $color-blue: rgb(106, 178, 207); //Theme choisi par l'équipe par défaut.
 $color-grey: #31302f;
 $theme-color: $color-grey; //La couleur du thème avec laquelle on travaille toutes nos mixin qui nous permet juste de changer sa valeur pour modifier notre thème.
-
+$color-darken: darken($theme-color, 90%);
+$color-lighten: lighten($theme-color, 90%);
 
 // Cette mixin sert à changer la couleur de police en fonction de la luminosité de notre background.
 @mixin police {
     @if (lightness($theme-color) > 25%){ 
-        $theme-color: darken($theme-color, 90%);
-        color: $theme-color;
+        color: $color-darken;
     }@else {
-        $theme-color: lighten($theme-color, 90%);
-        color: $theme-color;
+        color: $color-lighten;
     }
     @content;
 }
+
 // Cette mixin sert à changer la couleur du corps de page en fonction de la luminosité de notre background.
 @mixin theme {
     background-color: var(--main-bg-color);
@@ -24,24 +24,19 @@ $theme-color: $color-grey; //La couleur du thème avec laquelle on travaille tou
 // Cette mixin sert à changer la couleur du marker de la barre de progression en fonction de la luminosité de notre background.
 @mixin marker {
     @if(lightness($theme-color) > 25% ){ 
-        $theme-color: darken($theme-color, 90%);
-        border-bottom-color: $theme-color;
+        border-bottom-color: $color-darken;
     }@else{
-        $theme-color: lighten($theme-color, 90%);
-        border-bottom-color: $theme-color;
+        border-bottom-color: $color-lighten;
     }
     @content;
 }
 
-
 // Cette mixin sert à changer la couleur de nos deux svg en fonction de la luminosité de notre background.
 @mixin svg {
     @if (lightness($theme-color) > 25% ){ 
-        $theme-color: darken($theme-color, 90%);
-        fill: $theme-color;
+        fill:$color-darken;
     }@else{
-        $theme-color: lighten($theme-color, 90%);
-        fill: $theme-color;
+        fill: $color-lighten;
     }
     @content;
 }
@@ -49,18 +44,19 @@ $theme-color: $color-grey; //La couleur du thème avec laquelle on travaille tou
 @mixin bouton-content-footer {
     @include theme;
     border-radius: 15px;
+    text-align: center;
     @content;
 }
 
 @mixin btn-hover {  
     @if (lightness($theme-color) > 25% ){ 
-        $theme-color: darken($theme-color, 90%);
-        border:solid 1px $theme-color;
+        $theme-color: $color-darken;
     }@else{
-        $theme-color: lighten($theme-color, 90%);
-        border:solid 1px $theme-color;
+        $theme-color: $color-lighten;
     }
+    box-shadow: 0 0 0 2px $theme-color;
 }
+
 @mixin unset {
     border: none;
     padding: 0;

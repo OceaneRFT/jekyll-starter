@@ -2,9 +2,7 @@ $step_color: #eaeaea;
 $step_color_passed: #7dc71b;
 $step_color_current: lighten($step_color_passed, 30%);
 $offset_parent: 0px;
-
 $border_radius: 5px;
-
 
 section.progress {
     overflow: visible;
@@ -24,10 +22,12 @@ section.progress {
       border-right: 1px solid grey;
       position: relative;
       border-bottom: 3px solid darken($step_color, 3);
+
       &:first-child {
         border-top-left-radius: $border_radius;
         border-bottom-left-radius: $border_radius;
       }
+      
       &:last-child {
         border-right: unset;
         border-top-right-radius: $border_radius;

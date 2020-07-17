@@ -49,6 +49,6 @@ Si vous lisez bien, vous constaterez que cette condition est insérée dans la c
 
 On n'oublie pas d'ajouter `endfor` à la fin et hop, notre boucle est bouclée ! 
 
-Si nous voulons ajouter des pages à notre site, il nous suffit d'ajouter un item dans notre data file `navigation` et Jekyll créera l'onglet automatiquement. C'est fou.
+Si nous voulons ajouter des pages à notre site, il nous suffit d'ajouter un item dans notre data file `navigation.yml` et Jekyll créera l'onglet automatiquement. C'est fou.
 
 

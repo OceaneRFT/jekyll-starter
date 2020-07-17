@@ -1,26 +1,30 @@
 // Style des barres de navigation
-
-
 .navbar {
     background-color: $theme-color;
     padding: 0.65rem 1re;
     min-height: 56px;
+
     & .nav-link {
         @include police;
     }
+
     & .main-active {
         font-weight: bold;
     }
+
     & .dropdown {
+
         &-item {
-            &:hover{
+            &:hover {
             @include theme;
             @include police;
             }
-            &:active{
+
+            &:active {
                 @include theme;
                 background-color: unset;
             }
+
             &.active {
                 background-color: $theme-color;
             }
@@ -35,20 +39,27 @@
         z-index: 10000;
         right: 0;
         top: 0;
+
+        &:hover {
+            cursor: crosshair;
+        }
+
         & .nav_icon {
             width: 100%;
         }
     }
+
     & .navbar-toggler {
         width: 56px;
+
             &:focus {
                 outline: transparent;
             }
+
         & .logo_burgermenu {
         width: 100%;
         }
     }
-
 }
 
 .container {
@@ -63,29 +74,40 @@
         top: 89px;
         border-top-left-radius: 30px;
         box-shadow: none;
+
         & .nav_right-link {
             @include police ;
+
             &:hover {
                 text-decoration: underline;
             }
         }
     }
+
     & .active {
         font-weight: bold;
+
         &:before {
             content: "> ";
         }
     }
-    & .beautiful-icon{
+
+    & .beautiful-icon {
         width: 100%;
-        box-shadow:none
+        box-shadow:none;
+
+        &:hover {
+            cursor: crosshair;
+        }
     }
-    & .icon-home{
+
+    & .icon-home {
         width: 40%;
         transform: translate(-50%);
         left: 50%;
         position: relative;
     }
+
     & .prev-next {
         margin-bottom: 8px;
     }
@@ -97,52 +119,64 @@
         display: flex;                                   /////////////// next-previous
         justify-content: space-between;
         align-items: center;
-        margin: 0 15px 15px 15px;
-        & .row-button{
+        margin-bottom: 15px;
+
+        & a:hover {
+            text-decoration: none;
+        }
+
+        & .row-button {
             display: flex;
             justify-content: space-between;
         }
+
         & .previous {
-            text-align: left;
             @include bouton-content-footer;
-            &:hover{
+
+            &:hover {
                 @include btn-hover
             }
         }
-        & .validate{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+        & .validate {
             @include bouton-content-footer;
-            &:hover{
+
+            &:hover {
                 @include btn-hover
             }
         }
+
         & .next {
-            text-align: right;
             @include bouton-content-footer;
-            &:hover{
+
+            &:hover {
                 @include btn-hover
             }
         }
+
         & .label {
             font-size: 1.2rem;
             @include police;
+
             &:hover {
                 font-size: 1.2rem;
             }
         }
+
         & .arrow {
             font-size: 1.2rem;
             @include police;
+
             &:hover {
                 font-size: 1.2rem;
             }
         }
     }
-    &-nav-button{
+
+    &-nav-button {
         @include police;
     }
+
     &-nav-button:hover {
         @include police;
         text-decoration: unset;

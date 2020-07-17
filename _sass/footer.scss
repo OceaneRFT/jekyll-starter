@@ -1,24 +1,30 @@
 
 .page-footer {
+
     & .row-footer {
         margin-top: 15px;
+
         & .logodwwm {
         width: 150px;
         height: auto;
         box-shadow: unset;
         }
+
         & .logogit {
         width: 50px;
         }
+
         & .col-footer {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 15px;
+        
             &:last-child {
                 margin-bottom: 0;
             }
         }
+        
         & .btn {
         @include police;
         } 
