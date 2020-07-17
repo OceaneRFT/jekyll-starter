@@ -21,15 +21,15 @@
 	.st4{fill:#333333;}
 	.st5{opacity:0.5;fill:#FFFFFF;enable-background:new    ;}
 	.st6{fill:#FFFFFF;}
-	.st7 {fill: #fff;cx: 60.7;cy: 60.5;rx: 60; ry: 60; }
+	.st7{fill: #fff;}
 </style>
 <switch>
-	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
+	<foreignObject requiredExtensions="&ns_ai;" x="60.7;" y="60.5" width="60" height="60">
 		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
 		</i:pgfRef>
 	</foreignObject>
 	<g i:extraneous="self">
-		<ellipse xmlns="http://www.w3.org/2000/svg" class="st7" cx="41" cy="101" rx="1" ry="2"/>
+		<ellipse xmlns="http://www.w3.org/2000/svg" class="st7" cx="60.7" cy="60.5" rx="60" ry="60"/>
 		<g>
 			<path class="st0" d="M60.95,0C27.61,0,0.57,27.04,0.57,60.39c0,26.68,17.3,49.32,41.3,57.3c3.02,0.56,4.13-1.31,4.13-2.91
 				c0-1.44-0.06-6.2-0.08-11.24c-16.8,3.65-20.34-7.13-20.34-7.13c-2.75-6.98-6.7-8.84-6.7-8.84c-5.48-3.75,0.41-3.67,0.41-3.67

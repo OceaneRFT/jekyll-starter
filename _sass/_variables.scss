@@ -44,7 +44,9 @@ $color-lighten: lighten($theme-color, 90%);
 @mixin bouton-content-footer {
     @include theme;
     border-radius: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @content;
 }
 
