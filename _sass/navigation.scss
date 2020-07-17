@@ -22,7 +22,7 @@
 
             &:active {
                 @include theme;
-                background-color: unset;
+                @include police;
             }
 
             &.active {
@@ -179,6 +179,6 @@
 
     &-nav-button:hover {
         @include police;
-        text-decoration: unset;
+        text-decoration: none;
     }
 }
