@@ -50,11 +50,10 @@ $color-lighten: lighten($theme-color, 90%);
 
 @mixin btn-hover {  
     @if (lightness($theme-color) > 25% ){ 
-        $theme-color: $color-darken;
+        box-shadow: 0 0 0 2px $color-darken;
     }@else{
-        $theme-color: $color-lighten;
+        box-shadow: 0 0 0 2px $color-lighten;
     }
-    box-shadow: 0 0 0 2px $theme-color;
 }
 
 @mixin unset {
